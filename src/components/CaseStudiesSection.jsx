@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import CaseStudyCard from './CaseStudyCard';
-import { ChevronLeft, ChevronRight, LineChart, BarChart3, Search, RefreshCw, Lightbulb, FileText, Settings, Users } from 'lucide-react';
+import { ChevronLeft, ChevronRight, LineChart, BarChart3, Search, RefreshCw, Lightbulb, FileText, Settings, Users, DollarSign } from 'lucide-react';
 
 const CaseStudiesSection = () => {
   const scrollContainerRef = useRef(null);
@@ -50,7 +50,8 @@ const CaseStudiesSection = () => {
         type: "Design",
         icon: <RefreshCw className="text-purple-600" size={24} />,
         slug: "wallet-redesign",
-        description: "Redesigning the payment flow for a digital wallet application to reduce drop-offs and improve user satisfaction."
+        description: "Redesigning the payment flow for a digital wallet application to reduce drop-offs and improve user satisfaction.",
+        isDetailed: true
       },
       {
         title: "Healthcare App UI/UX Overhaul",
@@ -73,7 +74,8 @@ const CaseStudiesSection = () => {
         type: "Metrics",
         icon: <LineChart className="text-green-600" size={24} />,
         slug: "ecommerce-conversion-rate",
-        description: "Data-driven approach to identify and implement key optimizations to improve an e-commerce platform's conversion rate by 22%."
+        description: "Data-driven approach to identify and implement key optimizations to improve an e-commerce platform's conversion rate by 22%.",
+        isDetailed: true
       },
       {
         title: "SaaS Product Retention Analysis",
@@ -96,7 +98,8 @@ const CaseStudiesSection = () => {
         type: "Strategy",
         icon: <BarChart3 className="text-yellow-600" size={24} />,
         slug: "subscription-strategy",
-        description: "Developing a comprehensive strategy to increase the annual recurring revenue of a SaaS product by 35%."
+        description: "Strategic overhaul of subscription pricing and features to increase revenue by 35% while improving customer satisfaction.",
+        isDetailed: true
       },
       {
         title: "AI Feature Prioritization Framework",

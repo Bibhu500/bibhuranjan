@@ -7,6 +7,9 @@ import PMAI from './pages/PMAI';
 import FutureJobs from './pages/FutureJobs';
 import RapidoCaseStudy from './pages/RapidoCaseStudy';
 import EcommerceCheckoutRCA from './pages/EcommerceCheckoutRCA';
+import WalletRedesign from './pages/WalletRedesign';
+import EcommerceConversionRate from './pages/EcommerceConversionRate';
+import SubscriptionStrategy from './pages/SubscriptionStrategy';
 import './App.css'
 
 function App() {
@@ -22,14 +25,14 @@ function App() {
         {/* Case Studies Routes */}
         <Route path="/case-studies/rapido-driver-rating" element={<RapidoCaseStudy />} />
         <Route path="/case-studies/ecommerce-checkout" element={<EcommerceCheckoutRCA />} />
+        <Route path="/case-studies/wallet-redesign" element={<WalletRedesign />} />
+        <Route path="/case-studies/ecommerce-conversion-rate" element={<EcommerceConversionRate />} />
+        <Route path="/case-studies/subscription-strategy" element={<SubscriptionStrategy />} />
         <Route path="/case-studies/app-crash-analysis" element={<RapidoCaseStudy />} />
-        <Route path="/case-studies/wallet-redesign" element={<RapidoCaseStudy />} />
         <Route path="/case-studies/healthcare-app-design" element={<RapidoCaseStudy />} />
         <Route path="/case-studies/product-page-redesign" element={<RapidoCaseStudy />} />
-        <Route path="/case-studies/ecommerce-conversion-rate" element={<RapidoCaseStudy />} />
         <Route path="/case-studies/saas-retention" element={<RapidoCaseStudy />} />
         <Route path="/case-studies/app-engagement" element={<RapidoCaseStudy />} />
-        <Route path="/case-studies/subscription-strategy" element={<RapidoCaseStudy />} />
         <Route path="/case-studies/ai-prioritization" element={<RapidoCaseStudy />} />
         <Route path="/case-studies/product-launch" element={<RapidoCaseStudy />} />
       </Routes>
