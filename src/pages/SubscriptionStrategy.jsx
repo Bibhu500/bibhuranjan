@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   ArrowLeft, 
@@ -21,6 +21,10 @@ import {
 import Footer from '../components/Footer';
 
 const SubscriptionStrategy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-white min-h-screen">
       {/* Header */}
