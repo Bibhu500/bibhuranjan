@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import PMTransition from './pages/PMTransition';
 import UserBehavior from './pages/UserBehavior';
@@ -12,9 +12,21 @@ import EcommerceConversionRate from './pages/EcommerceConversionRate';
 import SubscriptionStrategy from './pages/SubscriptionStrategy';
 import './App.css'
 
+// ScrollToTop component
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/PMtransition" element={<PMTransition />} />

@@ -1,14 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import BlogNavbar from '../components/BlogNavbar';
 import Footer from '../components/Footer';
 import { ArrowLeft } from 'lucide-react';
 
 const PMTransition = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className="bg-gray-50">
       <BlogNavbar />
