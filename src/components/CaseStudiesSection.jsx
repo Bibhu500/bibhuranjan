@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import CaseStudyCard from './CaseStudyCard';
-import { ChevronLeft, ChevronRight, LineChart, BarChart3, Search, RefreshCw, Lightbulb, FileText, Settings, Users, DollarSign } from 'lucide-react';
+import { ChevronLeft, ChevronRight, LineChart, BarChart3, Search, RefreshCw, Lightbulb, FileText, Settings, Laptop, Brush, Car } from 'lucide-react';
 
 const CaseStudiesSection = () => {
   const scrollContainerRef = useRef(null);
@@ -115,7 +115,32 @@ const CaseStudiesSection = () => {
         slug: "product-launch",
         description: "Developing and executing a successful product launch strategy for a new mobile application."
       }
-    ]
+    ],
+
+    "Guesstimates": [
+  {
+    title: "Laptops Sold Daily in Delhi",
+    type: "Guesstimate",
+    icon: <Laptop className="text-purple-600" size={24} />,
+    slug: "laptops-delhi-daily",
+    description: "Estimate the number of laptops sold in Delhi on an average weekday using population, income segment, and replacement cycle assumptions."
+  },
+  {
+    title: "Annual Toothbrush Demand in India",
+    type: "Guesstimate",
+    icon: <Brush className="text-blue-500" size={24} />,
+    slug: "toothbrush-demand-india",
+    description: "Break down the total number of toothbrushes sold in India annually by factoring in population, frequency of replacement, and rural vs urban usage."
+  },
+  {
+    title: "Daily Uber Rides in Bangalore",
+    type: "Guesstimate",
+    icon: <Car className="text-green-600" size={24} />,
+    slug: "uber-rides-bangalore",
+    description: "Estimate the number of daily Uber rides in Bangalore based on total population, smartphone penetration, and average commute behavior."
+  }
+]
+
   };
 
   const tabIcons = {

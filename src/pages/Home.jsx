@@ -98,14 +98,14 @@ const Home = () => {
           {/* Default layout for larger screens */}
           <div className="hidden sm:flex sm:flex-col md:flex-row items-center">
             <div className="md:w-1/2 order-1 md:order-2 mb-8 md:mb-0">
-              <div className="inline-block bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
-                AI Product Manager
-              </div>
+              {/* <div className="inline-block bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
+                Product Manager
+              </div> */}
               <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-gray-800 leading-tight">
                 Hi, I'm <span className="text-blue-600">Bibhu Ranjan</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-xl">
-                Transforming complex problems into elegant solutions through data-driven product management and AI innovation.
+              I turn complex challenges into simple, impactful solutions through outcome-driven product strategy and AI innovation.
               </p>
               <div className="flex space-x-4">
                 <a href="mailto:bibhuranjan621@gmail.com" className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition flex items-center">
@@ -129,13 +129,13 @@ const Home = () => {
             {/* Text content taking 60% */}
             <div className="col-span-3">
               <div className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium mb-2">
-                AI Product Manager
+                Product Manager
               </div>
               <h1 className="text-2xl font-bold mb-2 text-gray-800">
                 Hi, I'm <span className="text-blue-600">Bibhu Ranjan</span>
               </h1>
               <p className="text-sm text-gray-600 mb-4">
-                Transforming complex problems into elegant solutions through data-driven product management.
+              I turn complex challenges into simple, impactful solutions through outcome-driven product strategy and AI innovation.
               </p>
               <div className="flex flex-col space-y-2">
                 <a href="mailto:bibhuranjan621@gmail.com" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition text-sm text-center flex items-center justify-center">
@@ -171,7 +171,7 @@ const Home = () => {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold mb-6 text-gray-800">How I Create Impact</h2>
             <p className="text-gray-600 text-lg">
-              I combine technical expertise with product thinking to deliver solutions that drive business growth and user satisfaction.
+              I combine my diversetechnical expertise with product thinking to deliver solutions that drive business growth and user satisfaction.
             </p>
           </div>
           
@@ -243,7 +243,7 @@ const Home = () => {
                     <ul className="text-sm text-gray-500 list-disc pl-4 space-y-2">
                       <li>Developed product and product roadmap, managed operations, hiring and social media campaigns</li>
                       <li>Conducted user research and implemented AI-driven features for improved user experience</li>
-                      <li>Achieved 20% increase in website retention and enhanced platform engagement</li>
+                      <li>Achieved 20% increase in website retention and enhanced platform engagement to increase platform revenue.</li>
                     </ul>
                   </div>
                 </div>
@@ -422,6 +422,10 @@ const Home = () => {
                   <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
                   Prioritization & Time Management
                 </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
+                  Product Roadmapping
+                </li>
               </ul>
             </div>
 
@@ -434,15 +438,19 @@ const Home = () => {
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-yellow-600 rounded-full mr-2"></div>
-                  Figma, GitHub, Google Analytics
+                  Google Analytics, Microsoft Clarity.
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-yellow-600 rounded-full mr-2"></div>
-                  Microsoft Teams, Google Workspace
+                  Microsoft Teams, Google Workspace, Slack
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-yellow-600 rounded-full mr-2"></div>
-                  Jira, Notion, Excel, Google Forms
+                  Excel, Google Forms
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-yellow-600 rounded-full mr-2"></div>
+                  Figma, Jira, Notion, Confluence
                 </li>
               </ul>
             </div>
@@ -681,7 +689,7 @@ const Home = () => {
                 <h3 className="text-xl font-bold">rcamatters</h3>
               </div>
               <p className="text-gray-600 mb-4">An innovative AI platform to practice and learn Root Cause Analysis of a product problem</p>
-              <a href="#" className="text-blue-600 hover:underline flex items-center">
+              <a href="https://rcamatters.vercel.app" className="text-blue-600 hover:underline flex items-center">
                 Visit Project <ArrowRight size={16} className="ml-1" />
               </a>
             </div>
@@ -718,7 +726,7 @@ const Home = () => {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-20 bg-gray-50">
+      {/* <section id="education" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold mb-6 text-gray-800">Education</h2>
@@ -755,7 +763,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Speaking Engagements Section */}
       <section className="py-20 bg-white">
