@@ -10,6 +10,7 @@ import EcommerceCheckoutRCA from './pages/EcommerceCheckoutRCA';
 import WalletRedesign from './pages/WalletRedesign';
 import EcommerceConversionRate from './pages/EcommerceConversionRate';
 import SubscriptionStrategy from './pages/SubscriptionStrategy';
+import ChatGPTLengthControl from './pages/ChatGPTLengthControl';
 import './App.css'
 
 // ScrollToTop component
@@ -35,6 +36,7 @@ function App() {
         <Route path="/futurejobs" element={<FutureJobs />} />
         
         {/* Case Studies Routes */}
+        <Route path="/case-studies/chatgpt-length-control" element={<ChatGPTLengthControl />} />
         <Route path="/case-studies/rapido-driver-rating" element={<RapidoCaseStudy />} />
         <Route path="/case-studies/ecommerce-checkout" element={<EcommerceCheckoutRCA />} />
         <Route path="/case-studies/wallet-redesign" element={<WalletRedesign />} />

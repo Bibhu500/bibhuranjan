@@ -15,6 +15,7 @@ const CaseStudyCard = ({ title, type, icon, slug, description, isDetailed = fals
             type === 'Design' ? 'bg-purple-100 text-purple-800' : 
             type === 'Metrics' ? 'bg-green-100 text-green-800' : 
             type === 'Strategy' ? 'bg-yellow-100 text-yellow-800' : 
+            type === 'Product Enhancement' ? 'bg-indigo-100 text-indigo-800' : 
             'bg-blue-100 text-blue-800'
           }`}>
             {type}

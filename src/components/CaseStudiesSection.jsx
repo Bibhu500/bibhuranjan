@@ -94,6 +94,14 @@ const CaseStudiesSection = () => {
     ],
     "Product Improvement": [
       {
+        title: "ChatGPT Response Length Control Feature",
+        type: "Product Enhancement",
+        icon: <Settings className="text-blue-600" size={24} />,
+        slug: "chatgpt-length-control",
+        description: "Product improvement proposal for ChatGPT to add response length controls, reducing compute costs and giving users precise control over output length.",
+        isDetailed: true
+      },
+      {
         title: "Subscription Service Revenue Strategy",
         type: "Strategy",
         icon: <BarChart3 className="text-yellow-600" size={24} />,
