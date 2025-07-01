@@ -131,7 +131,8 @@ const CaseStudiesSection = () => {
     type: "Guesstimate",
     icon: <Laptop className="text-purple-600" size={24} />,
     slug: "laptops-delhi-daily",
-    description: "Estimate the number of laptops sold in Delhi on an average weekday using population, income segment, and replacement cycle assumptions."
+    description: "Estimate the number of laptops sold in Delhi on an average weekday using population, income segment, and replacement cycle assumptions.",
+    isDetailed: true
   },
   {
     title: "Annual Toothbrush Demand in India",
@@ -155,7 +156,8 @@ const CaseStudiesSection = () => {
     RCA: <Search className="mr-2" size={18} />,
     Design: <RefreshCw className="mr-2" size={18} />,
     Metrics: <LineChart className="mr-2" size={18} />,
-    "Product Improvement": <Settings className="mr-2" size={18} />
+    "Product Improvement": <Settings className="mr-2" size={18} />,
+    "Guesstimates": <BarChart3 className="mr-2" size={18} />
   };
 
   return (

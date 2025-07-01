@@ -73,10 +73,10 @@ const EcommerceConversionRate = () => {
           
           <div className="prose max-w-none">
             <p>
-              As the Product Manager responsible for conversion optimization, I was tasked with improving the platform's conversion rate, which had plateaued at 1.8% despite having strong traffic and a good product selection. The challenge was to identify and implement data-driven optimizations that would significantly impact conversion rates.
+              This case study demonstrates my data-driven approach to conversion optimization for a hypothetical e-commerce platform with a plateaued conversion rate of 1.8% despite strong traffic and good product selection. This analysis showcases my methodology for identifying optimization opportunities and implementing targeted improvements to drive meaningful conversion improvements.
             </p>
             <p>
-              This case study outlines my approach to analyzing user behavior, identifying key friction points, and implementing targeted improvements that led to a 22% increase in conversion rate.
+              This case study outlines my systematic approach to user behavior analysis, friction point identification, and solution prioritization that could potentially drive a 22% increase in conversion rate.
             </p>
           </div>
         </section>

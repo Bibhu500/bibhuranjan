@@ -53,7 +53,7 @@ const EcommerceCheckoutRCA = () => {
         <section className="bg-white rounded-xl shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Problem Statement</h2>
           <p className="text-gray-600 mb-4">
-            Our e-commerce platform was experiencing a significant checkout abandonment rate of 68%, well above the industry average of 69.57%. This was resulting in lost revenue and poor user experience. The issue was particularly pronounced in the mobile user segment.
+            In this analytical case study, I examine a hypothetical e-commerce platform experiencing a significant checkout abandonment rate of 68%, well above the industry average of 69.57%. This scenario demonstrates my approach to identifying root causes and developing solutions for conversion optimization challenges, particularly focusing on the mobile user segment.
           </p>
           <div className="bg-red-50 border border-red-200 rounded-lg p-4 mt-4">
             <div className="flex items-start">

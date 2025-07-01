@@ -27,7 +27,12 @@ import {
   Zap,
   Target,
   PieChart,
-  LineChart
+  LineChart,
+  TrendingUp,
+  Star,
+  Download,
+  Calendar,
+  MapPin
 } from 'lucide-react';
 
 const Home = () => {
@@ -86,399 +91,805 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="bg-gray-50 font-[Inter] scroll-smooth">
+    <div className="bg-white font-[Inter] scroll-smooth">
       <Navbar />
       
-      {/* Hero Section with Parallax Effect */}
-      <section id="home" className="min-h-screen flex items-center pt-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-indigo-50 z-0"></div>
-        <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10 z-0"></div>
+      {/* Enhanced Hero Section */}
+      <section id="home" className="min-h-screen flex items-center pt-20 relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.1),transparent_50%)] z-0"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(147,51,234,0.1),transparent_50%)] z-0"></div>
         
         <div className="container mx-auto px-6 relative z-10">
-          {/* Default layout for larger screens */}
-          <div className="hidden sm:flex sm:flex-col md:flex-row items-center">
-            <div className="md:w-1/2 order-1 md:order-2 mb-8 md:mb-0">
-              {/* <div className="inline-block bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
-                Product Manager
-              </div> */}
-              <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-gray-800 leading-tight">
-                Hi, I'm <span className="text-blue-600">Bibhu Ranjan</span>
-              </h1>
-              <p className="text-xl text-gray-600 mb-8 max-w-xl">
-              I turn complex challenges into simple, impactful solutions through outcome-driven product strategy and AI innovation.
-              </p>
-              <div className="flex space-x-4">
-                <a href="mailto:bibhuranjan621@gmail.com" className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition flex items-center">
-                  Contact Me <ArrowRight size={16} className="ml-2" />
+          {/* Desktop Layout */}
+          <div className="hidden sm:grid sm:grid-cols-12 gap-8 items-center">
+            {/* Content - 8 columns */}
+            <div className="col-span-8 space-y-8">
+              {/* Status Badge */}
+              <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">
+                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                Available for Product Management Roles
+              </div>
+
+              {/* Main Heading */}
+              <div className="space-y-6">
+                <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                  <span className="text-gray-700">Hi, I'm</span>
+                  <br />
+                  <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    Bibhu Ranjan
+                  </span>
+                </h1>
+                
+                <div className="text-2xl lg:text-3xl font-semibold text-gray-800 mb-4">
+                  Product Manager
+                </div>
+                
+                <p className="text-xl text-gray-600 max-w-3xl leading-relaxed">
+                  I transform complex business challenges into simple, impactful solutions through 
+                  <span className="font-semibold text-gray-800"> outcome-driven product strategy</span> and 
+                  <span className="font-semibold text-gray-800"> intelligent automation</span>. 
+                  Specialized in developing AI-based features, integrating monetization strategies, and optimizing UX, resulting in a 300% increase in user retention and scaling the platform from 250 to over 2,000 users.                </p>
+              </div>
+
+              {/* Key Metrics Row */}
+              <div className="grid grid-cols-3 gap-6 py-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-600">300%</div>
+                  <div className="text-sm text-gray-600 font-medium">Retention Increase</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-purple-600">2+</div>
+                  <div className="text-sm text-gray-600 font-medium">Years Experience</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-green-600">2K+</div>
+                  <div className="text-sm text-gray-600 font-medium">Users Grown</div>
+                </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-wrap gap-4">
+                <a href="mailto:bibhuranjan621@gmail.com" 
+                   className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl hover:bg-blue-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                  <Mail size={20} />
+                  Let's Connect
+                  <ArrowRight size={16} />
                 </a>
-                <a href="https://www.linkedin.com/in/bibhu-ranjan-49569b16a/" target="_blank" className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition flex items-center">
-                  LinkedIn <ArrowRight size={16} className="ml-2" />
+                <a href="https://www.linkedin.com/in/bibhu-ranjan-49569b16a/" target="_blank" 
+                   className="inline-flex items-center gap-2 border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-xl hover:bg-blue-50 transition-all duration-300 font-semibold">
+                  <Linkedin size={20} />
+                  View LinkedIn
+                  <ArrowRight size={16} />
                 </a>
+                <a
+  href="https://firebasestorage.googleapis.com/v0/b/ieltsappeal-f000c.appspot.com/o/my%20resume%2FBibhu-Ranjan%20PM%20resume.pdf?alt=media&token=df3cfb0e-df72-448c-a7f2-c278b73720f8"
+  download
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="inline-flex items-center gap-2 border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl hover:bg-gray-50 transition-all duration-300 font-semibold">
+    <Download size={20} />
+    Download Resume
+  </button>
+</a>
+
               </div>
             </div>
-            <div className="md:w-1/2 order-2 md:order-1 flex justify-center mt-8 md:mt-0">
+
+            {/* Profile Image - 4 columns */}
+            <div className="col-span-4 flex justify-center">
               <div className="relative">
-                <div className="absolute inset-0 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
-                <img src="/profilepic.png" alt="Profile" className="relative rounded-full shadow-lg w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 border-4 border-white" />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-400 rounded-2xl blur-3xl opacity-20 transform scale-110"></div>
+                <div className="relative bg-white p-2 rounded-2xl shadow-2xl">
+                  <img src="/profilepic.png" alt="Bibhu Ranjan - Product Manager" 
+                       className="rounded-xl w-80 h-80 object-cover" />
+                </div>
+                {/* Floating Achievement Badge */}
+                <div className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-lg p-3 border border-gray-100">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                    <span className="text-sm font-semibold text-gray-700">Open to Work</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Mobile-only layout */}
-          <div className="grid grid-cols-5 gap-4 sm:hidden">
-            {/* Text content taking 60% */}
-            <div className="col-span-3">
-              <div className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium mb-2">
-                Product Manager
-              </div>
-              <h1 className="text-2xl font-bold mb-2 text-gray-800">
-                Hi, I'm <span className="text-blue-600">Bibhu Ranjan</span>
-              </h1>
-              <p className="text-sm text-gray-600 mb-4">
-              I turn complex challenges into simple, impactful solutions through outcome-driven product strategy and AI innovation.
-              </p>
-              <div className="flex flex-col space-y-2">
-                <a href="mailto:bibhuranjan621@gmail.com" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition text-sm text-center flex items-center justify-center">
-                  Contact Me <ArrowRight size={14} className="ml-1" />
-                </a>
-                <a href="https://www.linkedin.com/in/bibhu-ranjan-49569b16a/" target="_blank" className="border-2 border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition text-sm text-center flex items-center justify-center">
-                  LinkedIn <ArrowRight size={14} className="ml-1" />
-                </a>
+          {/* Mobile Layout */}
+          <div className="sm:hidden space-y-8">
+            {/* Profile Image */}
+            <div className="flex justify-center">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-400 rounded-2xl blur-2xl opacity-20 transform scale-110"></div>
+                <div className="relative bg-white p-2 rounded-2xl shadow-xl">
+                  <img src="/profilepic.png" alt="Bibhu Ranjan - Product Manager" 
+                       className="rounded-xl w-32 h-32 object-cover" />
+                </div>
               </div>
             </div>
-            {/* Image taking 40% */}
-            <div className="col-span-2 flex items-center justify-center">
-              <div className="relative">
-                <div className="absolute inset-0 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
-                <img src="/profilepic.png" alt="Profile" className="relative rounded-full shadow-lg w-24 h-24 border-2 border-white" />
+
+            {/* Content */}
+            <div className="text-center space-y-6">
+              <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">
+                <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
+                Available for PM Roles
+              </div>
+
+              <h1 className="text-3xl font-bold text-gray-900">
+                <span className="text-gray-700">Hi, I'm</span>
+                <br />
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  Bibhu Ranjan
+                </span>
+              </h1>
+              
+              <div className="text-lg font-semibold text-gray-800">
+               Product Manager
+              </div>
+              
+              <p className="text-base text-gray-600 leading-relaxed">
+                I transform complex business challenges into simple, impactful solutions through outcome-driven product strategy and intelligent automation.
+              </p>
+
+              {/* Mobile Metrics */}
+              <div className="grid grid-cols-3 gap-4 py-4">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-blue-600">300%</div>
+                  <div className="text-xs text-gray-600">Retention ↑</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-purple-600">2+</div>
+                  <div className="text-xs text-gray-600">Years Exp</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-green-600">2K+</div>
+                  <div className="text-xs text-gray-600">Users</div>
+                </div>
+              </div>
+
+              {/* Mobile CTAs */}
+              <div className="space-y-3">
+                <a href="mailto:bibhuranjan621@gmail.com" 
+                   className="flex items-center justify-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition-all font-semibold w-full">
+                  <Mail size={18} />
+                  Let's Connect
+                  <ArrowRight size={14} />
+                </a>
+                <div className="grid grid-cols-2 gap-3">
+                  <a href="https://www.linkedin.com/in/bibhu-ranjan-49569b16a/" target="_blank" 
+                     className="flex items-center justify-center gap-2 border-2 border-blue-600 text-blue-600 px-4 py-3 rounded-xl hover:bg-blue-50 transition-all font-semibold text-sm">
+                    <Linkedin size={16} />
+                    LinkedIn
+                  </a>
+                  <button className="flex items-center justify-center gap-2 border-2 border-gray-300 text-gray-700 px-4 py-3 rounded-xl hover:bg-gray-50 transition-all font-semibold text-sm">
+                    <Download size={16} />
+                    Resume
+                  </button>
+                </div>
               </div>
             </div>
           </div>
           
           {/* Scroll indicator */}
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 hidden md:block">
-            <div className="flex flex-col items-center">
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden md:block">
+            <div className="flex flex-col items-center animate-bounce">
               <span className="text-sm text-gray-500 mb-2">Scroll to explore</span>
-              <ChevronDown className="text-gray-400 animate-bounce" size={20} />
+              <ChevronDown className="text-gray-400" size={20} />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Value Proposition Section */}
-      <section className="py-20 bg-white">
+      {/* Impact Metrics Dashboard */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">How I Create Impact</h2>
-            <p className="text-gray-600 text-lg">
-              I combine my diversetechnical expertise with product thinking to deliver solutions that drive business growth and user satisfaction.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="bg-blue-100 p-3 rounded-lg inline-block mb-4">
-                <Target className="text-blue-600" size={24} />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-800">Strategic Vision</h3>
-              <p className="text-gray-600">
-                Developing product roadmaps aligned with business objectives and market opportunities.
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Proven Track Record</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Quantifiable achievements that demonstrate my ability to drive exceptional business results through strategic product management and data-driven decision making.
               </p>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mt-6"></div>
             </div>
             
-            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="bg-purple-100 p-3 rounded-lg inline-block mb-4">
-                <PieChart className="text-purple-600" size={24} />
+            {/* Primary Impact Metrics */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center group">
+                <div className="bg-blue-100 rounded-2xl p-4 inline-block mb-4 group-hover:scale-110 transition-transform">
+                  <TrendingUp className="text-blue-600" size={32} />
+                </div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">300%</div>
+                <div className="text-gray-800 font-semibold mb-1">Website Retention</div>
+                <div className="text-sm text-gray-600">Increase through analytics-backed features</div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-800">Data-Driven Decisions</h3>
-              <p className="text-gray-600">
-                Leveraging analytics and user insights to inform product strategy and prioritization.
-              </p>
+
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center group">
+                <div className="bg-purple-100 rounded-2xl p-4 inline-block mb-4 group-hover:scale-110 transition-transform">
+                  <Users className="text-purple-600" size={32} />
+                </div>
+                <div className="text-4xl font-bold text-purple-600 mb-2">2K+</div>
+                <div className="text-gray-800 font-semibold mb-1">User Growth</div>
+                <div className="text-sm text-gray-600">From 250 to 2,000+ users in one month</div>
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center group">
+                <div className="bg-green-100 rounded-2xl p-4 inline-block mb-4 group-hover:scale-110 transition-transform">
+                  <Zap className="text-green-600" size={32} />
+                </div>
+                <div className="text-4xl font-bold text-green-600 mb-2">80%</div>
+                <div className="text-gray-800 font-semibold mb-1">Automation Efficiency</div>
+                <div className="text-sm text-gray-600">Through conversational AI chatbots</div>
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center group">
+                <div className="bg-orange-100 rounded-2xl p-4 inline-block mb-4 group-hover:scale-110 transition-transform">
+                  <Target className="text-orange-600" size={32} />
+                </div>
+                <div className="text-4xl font-bold text-orange-600 mb-2">500%</div>
+                <div className="text-gray-800 font-semibold mb-1">Test Participation</div>
+                <div className="text-sm text-gray-600">Growth through user research & A/B testing</div>
+              </div>
             </div>
-            
-            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="bg-green-100 p-3 rounded-lg inline-block mb-4">
-                <Zap className="text-green-600" size={24} />
+
+            {/* Secondary Metrics Row */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+              <div className="bg-white rounded-xl p-6 shadow-md text-center">
+                <div className="text-2xl font-bold text-indigo-600 mb-1">60K</div>
+                <div className="text-sm text-gray-600">Threads followers (3K→60K in 3 months)</div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-800">AI Innovation</h3>
-              <p className="text-gray-600">
-                Implementing AI-driven features that enhance user experience and operational efficiency.
-              </p>
+              <div className="bg-white rounded-xl p-6 shadow-md text-center">
+                <div className="text-2xl font-bold text-pink-600 mb-1">7%</div>
+                <div className="text-sm text-gray-600">Free-to-paid conversion rate</div>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md text-center">
+                <div className="text-2xl font-bold text-cyan-600 mb-1">40%</div>
+                <div className="text-sm text-gray-600">Course completion rate increase</div>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md text-center">
+                <div className="text-2xl font-bold text-emerald-600 mb-1">7K+</div>
+                <div className="text-sm text-gray-600">End users served across platforms</div>
+              </div>
+            </div>
+
+            {/* Detailed Impact Stories */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <div className="flex items-center mb-4">
+                  <div className="bg-blue-100 p-3 rounded-lg mr-4">
+                    <Briefcase className="text-blue-600" size={24} />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800">IELTSAPPEAL Growth</h3>
+                </div>
+                                 <div className="space-y-3 text-gray-600">
+                   <p>• Scaled student base from 250 to 2,000+ users through AI personalization</p>
+                   <p>• Launched ChatGPT-powered evaluation driving 300% engagement</p>
+                   <p>• Deployed conversational AI reducing support queries by 70%</p>
+                   <p>• Built intelligent scoring system generating first revenue streams</p>
+                 </div>
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <div className="flex items-center mb-4">
+                  <div className="bg-purple-100 p-3 rounded-lg mr-4">
+                    <Users className="text-purple-600" size={24} />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800">Cross-Platform Impact</h3>
+                </div>
+                <div className="space-y-3 text-gray-600">
+                  <p>• Impacted 500+ learners at UntraddCareer</p>
+                  <p>• Enabled 5+ startups to build initial teams</p>
+                  <p>• Served 20+ educational institutions at K12</p>
+                  <p>• Boosted operational efficiency by 60%</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Experience Section with Timeline */}
+      {/* Executive Summary Section */}
+      <section className="py-20 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Executive Summary</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 lg:p-12 shadow-lg">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                {/* Left Column - Key Points */}
+                <div className="lg:col-span-2 space-y-6">
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Outcome-driven Product Manager with 2 years of hands-on experience developing and launching products, specializing in 
+                    <span className="font-semibold text-blue-600"> conversational AI and API integrations</span> and 
+                    <span className="font-semibold text-blue-600"> intelligent automation systems</span>. 
+                    Successfully scaled user bases through ChatGPT-powered features, automated evaluation systems, and machine learning implementations across multiple edtech platforms.
+                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <div className="font-semibold text-gray-800">Strategic Leadership</div>
+                        <div className="text-sm text-gray-600">Led product roadmaps and cross-functional teams</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <div className="font-semibold text-gray-800">AI Innovation</div>
+                        <div className="text-sm text-gray-600">Implemented AI features driving user engagement</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <div className="font-semibold text-gray-800">Technical Expertise</div>
+                        <div className="text-sm text-gray-600">MERN stack, Python, DevOps, System Design</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-orange-600 rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <div className="font-semibold text-gray-800">Consulting Experience</div>
+                        <div className="text-sm text-gray-600">Advised multiple startups on product strategy</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Column - Key Stats */}
+                <div className="space-y-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-blue-600 mb-1">Current Role</div>
+                      <div className="text-gray-800 font-semibold">Product Manager</div>
+                      <div className="text-sm text-gray-600 font-medium">IELTSAPPEAL</div>
+                      <div className="text-sm text-gray-600">Nov 2023 - Present</div>
+                      <div className="text-xs text-gray-500 flex items-center justify-center gap-1 mt-2">
+                        <MapPin size={12} />
+                        Bangalore, India
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-purple-600 mb-1">Experience</div>
+                      <div className="text-gray-800 font-semibold">2+ Years</div>
+                      <div className="text-sm text-gray-600">Product Management</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Professional Journey Section - Redesigned */}
       <section id="experience" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Professional Journey</h2>
-            <p className="text-gray-600 text-lg">
-              My path from software development to product management has equipped me with a unique perspective on building successful products.
-            </p>
-          </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="relative">
-              {/* Timeline line */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-blue-200"></div>
-
-              {/* Experience Items */}
-              <div className="relative">
-                {/* Product Manager at Bangalore */}
-                <div className="mb-16 flex justify-between items-center w-full">
-                  <div className="w-5/12"></div>
-                  <div className="z-20">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-                      <Briefcase className="text-white" size={16} />
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Professional Journey</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                From software development to product management - a journey of continuous learning, impact creation, and strategic thinking.
+              </p>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mt-6"></div>
+            </div>
+            
+                         {/* Experience Grid */}
+             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              
+              {/* IELTSAPPEAL - Product Manager */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-blue-600">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <div className="bg-blue-100 p-3 rounded-xl">
+                      <Briefcase className="text-blue-600" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-800">Product Manager</h3>
+                      <p className="text-blue-600 font-semibold">IELTSAPPEAL</p>
                     </div>
                   </div>
-                  <div className="w-5/12 bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-                    <div className="flex items-center mb-2">
-                      <h3 className="font-bold text-lg">Product Manager</h3>
-                      <span className="ml-2 text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">Current</span>
-                    </div>
-                    <p className="text-gray-600 mb-2">Nov 2023 - Present</p>
-                    <ul className="text-sm text-gray-500 list-disc pl-4 space-y-2">
-                      <li>Developed product and product roadmap, managed operations, hiring and social media campaigns</li>
-                      <li>Conducted user research and implemented AI-driven features for improved user experience</li>
-                      <li>Achieved 20% increase in website retention and enhanced platform engagement to increase platform revenue.</li>
-                    </ul>
-                  </div>
+                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Current</span>
                 </div>
+                <p className="text-gray-600 font-medium mb-4">Nov 2023 - Present</p>
+                                 <div className="space-y-2 text-gray-700">
+                   <p>• Scaled student base from 250 to 2,000+ users through AI-powered personalization</p>
+                   <p>• Developed ChatGPT API-based evaluation system driving 300% retention increase</p>
+                   <p>• Built conversational AI chatbot reducing manual workload by 80%</p>
+                   <p>• Implemented intelligent test scoring features generating 7% conversion rate</p>
+                 </div>
+              </div>
 
-                {/* Technology Consultant */}
-                <div className="mb-16 flex justify-between items-center w-full right-timeline">
-                  <div className="w-5/12 bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-                    <div className="flex items-center mb-2">
-                      <h3 className="font-bold text-lg">Technology Consultant</h3>
+              {/* UNTRADDCAREER - Product and Program Manager */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-600">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <div className="bg-purple-100 p-3 rounded-xl">
+                      <Users className="text-purple-600" size={24} />
                     </div>
-                    <p className="text-gray-600 mb-2">2022 - Present</p>
-                    <ul className="text-sm text-gray-500 list-disc pl-4 space-y-2">
-                      <li>
-                        Advised <a href="https://samarthclinics.com/" target="_blank" className="text-blue-600 hover:underline">SamarthClinics</a>, a leading physiotherapy chain, on:
-                        <ul className="list-disc pl-4 mt-1 space-y-1">
-                          <li>Digital transformation of patient management systems</li>
-                          <li>Implementation of automated appointment scheduling</li>
-                          <li>Integration of telemedicine solutions for remote consultations</li>
-                        </ul>
-                      </li>
-                      <li>
-                        Consulted for <a href="https://www.cosmosinnovation.in/" target="_blank" className="text-blue-600 hover:underline">CosmosInnovation</a>, a technology solutions provider, on:
-                        <ul className="list-disc pl-4 mt-1 space-y-1">
-                          <li>Product strategy for SaaS platforms and mobile applications</li>
-                          <li>AI implementation in chatbot and automation solutions</li>
-                          <li>Scalable architecture design for enterprise applications</li>
-                        </ul>
-                      </li>
-                      <li>Provided strategic guidance on technology adoption and digital optimization for multiple businesses, focusing on:
-                        <ul className="list-disc pl-4 mt-1 space-y-1">
-                          <li>User-centric design implementation</li>
-                          <li>Performance optimization and scalability</li>
-                          <li>Integration of AI and automation solutions</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="z-20">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-                      <Settings className="text-white" size={16} />
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-800">Product & Program Manager</h3>
+                      <p className="text-purple-600 font-semibold">UNTRADDCAREER</p>
                     </div>
                   </div>
-                  <div className="w-5/12"></div>
+                  <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">Part-time</span>
                 </div>
-
-                {/* DevOps Engineer Role */}
-                <div className="mb-16 flex justify-between items-center w-full">
-                  <div className="w-5/12"></div>
-                  <div className="z-20">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-                      <Cog className="text-white" size={16} />
-                    </div>
-                  </div>
-                  <div className="w-5/12 bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-                    <div className="flex items-center mb-2">
-                      <h3 className="font-bold text-lg">DevOps Engineer</h3>
-                    </div>
-                    <p className="text-gray-600 mb-2">Mar 2021 - Sep 2023</p>
-                    <ul className="text-sm text-gray-500 list-disc pl-4 space-y-2">
-                      <li>Managed project dependencies, infrastructure, and cloud environments</li>
-                      <li>Developed CI/CD pipelines and automated deployment processes</li>
-                      <li>Collaborated with teams to streamline development workflows</li>
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Junior Software Developer at K12 Techno Services */}
-                <div className="mb-16 flex justify-between items-center w-full right-timeline">
-                  <div className="w-5/12 bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-                    <div className="flex items-center mb-2">
-                      <h3 className="font-bold text-lg">Junior Software Developer (MERN Stack)</h3>
-                    </div>
-                    <p className="text-gray-600 mb-2">Aug 2020 - Mar 2021</p>
-                    <ul className="text-sm text-gray-500 list-disc pl-4 space-y-2">
-                      <li>Developed a college management system for students and teachers to track academic progress and administrative tasks</li>
-                      <li>Contributed to the development of an edtech platform providing solutions for educational institutions</li>
-                      <li>Implemented features to enhance user experience and streamline operations</li>
-                    </ul>
-                  </div>
-                  <div className="z-20">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-                      <Code className="text-white" size={16} />
-                    </div>
-                  </div>
-                  <div className="w-5/12"></div>
+                <p className="text-gray-600 font-medium mb-4">May 2024 - Present</p>
+                <div className="space-y-2 text-gray-700">
+                  <p>• Built end-to-end operations impacting 500+ learners</p>
+                  <p>• Enabled 5+ startups to build initial teams through platform</p>
+                  <p>• Designed in-house LMS increasing course completion by 40%</p>
+                  <p>• Boosted operational efficiency by nearly 60%</p>
                 </div>
               </div>
+
+              {/* BLACKLINE INDIA - DevOps Engineer */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-green-600">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <div className="bg-green-100 p-3 rounded-xl">
+                      <Cog className="text-green-600" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-800">DevOps Engineer</h3>
+                      <p className="text-green-600 font-semibold">BLACKLINE INDIA</p>
+                    </div>
+                  </div>
+                  <span className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">Full-time</span>
+                </div>
+                <p className="text-gray-600 font-medium mb-4">Apr 2021 - Oct 2023</p>
+                <div className="space-y-2 text-gray-700">
+                  <p>• Managed production infrastructure using Jenkins, JFrog, GitHub, Docker</p>
+                  <p>• Built internal Applicant Tracking System for HR team</p>
+                  <p>• Collaborated with international clients and cross-functional teams</p>
+                  <p>• Ensured system stability and streamlined CI/CD pipelines</p>
+                </div>
+              </div>
+
+                             {/* Technology Consultant */}
+               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-indigo-600">
+                 <div className="flex items-start justify-between mb-4">
+                   <div className="flex items-center gap-3">
+                     <div className="bg-indigo-100 p-3 rounded-xl">
+                       <Settings className="text-indigo-600" size={24} />
+                     </div>
+                     <div>
+                       <h3 className="text-xl font-bold text-gray-800">Technology Consultant</h3>
+                       <p className="text-indigo-600 font-semibold">Freelance</p>
+                     </div>
+                   </div>
+                   <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-semibold">Consulting</span>
+                 </div>
+                 <p className="text-gray-600 font-medium mb-4">2022 - Present</p>
+                 <div className="space-y-2 text-gray-700">
+                   <p>• Advised <a href="https://samarthclinics.com/" target="_blank" className="text-blue-600 hover:underline font-medium">SamarthClinics</a> on AI-driven patient management and telemedicine</p>
+                   <p>• Consulted <a href="https://www.cosmosinnovation.in/" target="_blank" className="text-blue-600 hover:underline font-medium">CosmosInnovation</a> on chatbot integration and ML automation</p>
+                   <p>• Designed intelligent automation strategies for workflow optimization</p>
+                   <p>• Implemented API-first architecture with machine learning capabilities</p>
+                 </div>
+               </div>
+
+               {/* K12 TECHNO SERVICES - Junior Software Developer */}
+               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-orange-600">
+                 <div className="flex items-start justify-between mb-4">
+                   <div className="flex items-center gap-3">
+                     <div className="bg-orange-100 p-3 rounded-xl">
+                       <Code className="text-orange-600" size={24} />
+                     </div>
+                     <div>
+                       <h3 className="text-xl font-bold text-gray-800">Junior Software Developer</h3>
+                       <p className="text-orange-600 font-semibold">K12 TECHNO SERVICES</p>
+                     </div>
+                   </div>
+                   <span className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">Full-time</span>
+                 </div>
+                 <p className="text-gray-600 font-medium mb-4">Jul 2020 - Jan 2021</p>
+                 <div className="space-y-2 text-gray-700">
+                   <p>• Developed ERP system serving 20+ institutions and 7,000+ users</p>
+                   <p>• Implemented 5 new features increasing platform efficiency by 30%</p>
+                   <p>• Collaborated with product, development, QA, and DevOps teams</p>
+                   <p>• Ensured scalable features aligned with real-world needs</p>
+                 </div>
+               </div>
+             </div>
+
+            {/* Career Progression Summary */}
+            <div className="mt-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Career Progression</h3>
+                <p className="text-gray-600">From technical implementation to strategic product leadership</p>
+              </div>
+                             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+                 <div>
+                   <div className="text-2xl font-bold text-orange-600 mb-1">2020</div>
+                   <div className="text-sm text-gray-600">Started as Developer</div>
+                 </div>
+                 <div>
+                   <div className="text-2xl font-bold text-green-600 mb-1">2021</div>
+                   <div className="text-sm text-gray-600">DevOps Engineer</div>
+                 </div>
+                 <div>
+                   <div className="text-2xl font-bold text-indigo-600 mb-1">2022</div>
+                   <div className="text-sm text-gray-600">Freelance and Consultant</div>
+                 </div>
+                 <div>
+                   <div className="text-2xl font-bold text-purple-600 mb-1">2023</div>
+                   <div className="text-sm text-gray-600">Product Manager</div>
+                 </div>
+                 <div>
+                   <div className="text-2xl font-bold text-blue-600 mb-1">2024</div>
+                   <div className="text-sm text-gray-600">Multi-Platform PM</div>
+                 </div>
+               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Skills Section with Visual Cards */}
-      <section id="skills" className="py-20 bg-white">
+      {/* Case Studies Section */}
+      <CaseStudiesSection />
+
+      {/* Core Competencies Section */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Skills & Expertise</h2>
-            <p className="text-gray-600 text-lg">
-              A diverse skill set that combines technical knowledge with product management capabilities.
-            </p>
-          </div>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Core Competencies</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Key capabilities I've developed and applied to drive exceptional product outcomes across multiple platforms.
+              </p>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mt-6"></div>
+            </div>
+            
+            {/* Compact Grid Layout */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              
+              {/* Strategic Vision */}
+              <div className="group bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="bg-blue-600 p-3 rounded-xl group-hover:scale-110 transition-transform">
+                    <Target className="text-white" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-800">Strategic Vision</h3>
+                    <p className="text-sm text-gray-600">Built comprehensive product roadmaps and strategic plans</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium">Roadmapping</span>
+                  <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium">Market Analysis</span>
+                  <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium">Strategic Planning</span>
+                  <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium">OKRs/KPIs</span>
+                </div>
+              </div>
+              
+              {/* Data-Driven Decisions */}
+              <div className="group bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="bg-purple-600 p-3 rounded-xl group-hover:scale-110 transition-transform">
+                    <BarChart3 className="text-white" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-800">Data-Driven Decisions</h3>
+                    <p className="text-sm text-gray-600">Used analytics & user research to drive 300% retention growth</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs font-medium">Analytics</span>
+                  <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs font-medium">User Research</span>
+                  <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs font-medium">A/B Testing</span>
+                  <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs font-medium">Metrics</span>
+                </div>
+              </div>
+              
+              {/* AI Innovation */}
+              <div className="group bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="bg-green-600 p-3 rounded-xl group-hover:scale-110 transition-transform">
+                    <Zap className="text-white" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-800">AI Innovation</h3>
+                    <p className="text-sm text-gray-600">Deployed ChatGPT APIs & AI chatbots reducing workload by 80%</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-medium">ChatGPT API</span>
+                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-medium">AI Chatbots</span>
+                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-medium">Automation</span>
+                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-medium">ML Systems</span>
+                </div>
+              </div>
+
+              {/* Technical Leadership */}
+              <div className="group bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="bg-orange-600 p-3 rounded-xl group-hover:scale-110 transition-transform">
+                    <Code className="text-white" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-800">Technical Leadership</h3>
+                    <p className="text-sm text-gray-600">Led API integrations & system architecture for scalability</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs font-medium">API Integration</span>
+                  <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs font-medium">System Design</span>
+                  <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs font-medium">Architecture</span>
+                  <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs font-medium">DevOps</span>
+                </div>
+              </div>
+
+              {/* Cross-functional Leadership */}
+              <div className="group bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="bg-red-600 p-3 rounded-xl group-hover:scale-110 transition-transform">
+                    <Users className="text-white" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-800">Cross-functional Leadership</h3>
+                    <p className="text-sm text-gray-600">Managed diverse teams across engineering, design & business</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <span className="bg-red-100 text-red-800 px-2 py-1 rounded text-xs font-medium">Team Mgmt</span>
+                  <span className="bg-red-100 text-red-800 px-2 py-1 rounded text-xs font-medium">Stakeholders</span>
+                  <span className="bg-red-100 text-red-800 px-2 py-1 rounded text-xs font-medium">Agile</span>
+                  <span className="bg-red-100 text-red-800 px-2 py-1 rounded text-xs font-medium">Scrum</span>
+                </div>
+              </div>
+
+              {/* Business Acumen */}
+              <div className="group bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="bg-indigo-600 p-3 rounded-xl group-hover:scale-110 transition-transform">
+                    <LineChart className="text-white" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-800">Business Acumen</h3>
+                    <p className="text-sm text-gray-600">Applied revenue strategies & market analysis across startups</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <span className="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-xs font-medium">Revenue</span>
+                  <span className="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-xs font-medium">Consulting</span>
+                  <span className="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-xs font-medium">Market Analysis</span>
+                  <span className="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-xs font-medium">Strategy</span>
+                </div>
+              </div>
+            </div>
+
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Technical Skills */}
-            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="bg-blue-100 p-3 rounded-lg inline-block mb-4">
-                <Code className="text-blue-600" size={24} />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Technical Skills</h3>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                  Python, MERN Stack Development
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                  Platform Payment Integration, APIs
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                  Data Analysis & Metrics Tracking
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                  Feature Validation & Feedback Analysis
-                </li>
-              </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills & Expertise - Redesigned Compact */}
+      <section id="skills" className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Skills & Expertise</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                A comprehensive skill portfolio combining product management expertise with technical implementation capabilities.
+              </p>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mt-6"></div>
             </div>
 
-            {/* Development Methodologies */}
-            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="bg-purple-100 p-3 rounded-lg inline-block mb-4">
-                <Cog className="text-purple-600" size={24} />
+            {/* Core PM Skills - Featured */}
+            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 mb-8 border border-blue-100">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-blue-600 p-3 rounded-xl">
+                  <Briefcase className="text-white" size={24} />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800">Core Product Management Skills</h3>
               </div>
-              <h3 className="text-xl font-bold mb-4">Development Methodologies</h3>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-2"></div>
-                  Agile/LEAN Methodology
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-2"></div>
-                  System Design
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-2"></div>
-                  Software Development Life Cycle
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-2"></div>
-                  Project Management (Jira, Notion)
-                </li>
-              </ul>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
+                <span className="bg-blue-100 text-blue-800 px-3 py-2 rounded-lg text-sm font-medium text-center">Product Lifecycle Management</span>
+                <span className="bg-purple-100 text-purple-800 px-3 py-2 rounded-lg text-sm font-medium text-center">User Research</span>
+                <span className="bg-green-100 text-green-800 px-3 py-2 rounded-lg text-sm font-medium text-center">A/B Testing</span>
+                <span className="bg-orange-100 text-orange-800 px-3 py-2 rounded-lg text-sm font-medium text-center">Roadmapping</span>
+                <span className="bg-indigo-100 text-indigo-800 px-3 py-2 rounded-lg text-sm font-medium text-center">PRD Creation</span>
+                <span className="bg-pink-100 text-pink-800 px-3 py-2 rounded-lg text-sm font-medium text-center">Agile/Scrum</span>
+                <span className="bg-cyan-100 text-cyan-800 px-3 py-2 rounded-lg text-sm font-medium text-center">OKRs/KPIs</span>
+                <span className="bg-yellow-100 text-yellow-800 px-3 py-2 rounded-lg text-sm font-medium text-center">User Personas</span>
+                <span className="bg-emerald-100 text-emerald-800 px-3 py-2 rounded-lg text-sm font-medium text-center">GTM Strategies</span>
+                <span className="bg-rose-100 text-rose-800 px-3 py-2 rounded-lg text-sm font-medium text-center">Wireframing</span>
+                <span className="bg-violet-100 text-violet-800 px-3 py-2 rounded-lg text-sm font-medium text-center">User Stories</span>
+                <span className="bg-amber-100 text-amber-800 px-3 py-2 rounded-lg text-sm font-medium text-center">Root Cause Analysis</span>
+                <span className="bg-teal-100 text-teal-800 px-3 py-2 rounded-lg text-sm font-medium text-center">UI/UX Optimization</span>
+                <span className="bg-slate-100 text-slate-800 px-3 py-2 rounded-lg text-sm font-medium text-center">Customer Journey Mapping</span>
+              </div>
             </div>
 
-            {/* Managerial Skills */}
-            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="bg-green-100 p-3 rounded-lg inline-block mb-4">
-                <Users className="text-green-600" size={24} />
+            {/* Other Skills Grid - Compact */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              
+              {/* Technical Skills */}
+              <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-blue-100 p-2 rounded-lg">
+                    <Code className="text-blue-600" size={20} />
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-800">Technical Skills</h4>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">Python</span>
+                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">MERN Stack</span>
+                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">API Integration</span>
+                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">SQL</span>
+                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">AWS</span>
+                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">Payment Systems</span>
+                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">ChatGPT API</span>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-4">Managerial Skills</h3>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
-                  Team Management
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
-                  Design Thinking & System Design
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
-                  Problem Solving & Critical Thinking
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
-                  Prioritization & Time Management
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
-                  Product Roadmapping
-                </li>
-              </ul>
+
+              {/* Tools & Platforms */}
+              <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-purple-100 p-2 rounded-lg">
+                    <Wrench className="text-purple-600" size={20} />
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-800">Tools & Platforms</h4>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Jira</span>
+                    <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Notion</span>
+                    <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Figma</span>
+                    <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Google Analytics</span>
+                    <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Microsoft Clarity</span>
+                    <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Slack</span>
+                    <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Confluence</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Methodologies & Soft Skills */}
+              <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-green-100 p-2 rounded-lg">
+                    <Users className="text-green-600" size={20} />
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-800">Leadership & Process</h4>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-sm">Team Management</span>
+                    <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-sm">Agile/LEAN</span>
+                    <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-sm">Design Thinking</span>
+                    <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-sm">System Design</span>
+                    <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-sm">Stakeholder Management</span>
+                    <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-sm">Problem Solving</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            {/* Tools */}
-            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="bg-yellow-100 p-3 rounded-lg inline-block mb-4">
-                <Wrench className="text-yellow-600" size={24} />
+            {/* Languages - Compact Row */}
+            <div className="mt-6 bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="bg-gray-200 p-2 rounded-lg">
+                    <Languages className="text-gray-600" size={20} />
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-800">Languages</h4>
+                </div>
+                <div className="flex gap-3">
+                  <span className="bg-white text-gray-700 px-3 py-1 rounded-lg text-sm font-medium">Hindi (Fluent)</span>
+                  <span className="bg-white text-gray-700 px-3 py-1 rounded-lg text-sm font-medium">English (Fluent)</span>
+                  <span className="bg-white text-gray-600 px-3 py-1 rounded-lg text-sm">Sanskrit (Beginner)</span>
+                  <span className="bg-white text-gray-600 px-3 py-1 rounded-lg text-sm">Russian (Beginner)</span>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-4">Tools</h3>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-yellow-600 rounded-full mr-2"></div>
-                  Google Analytics, Microsoft Clarity.
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-yellow-600 rounded-full mr-2"></div>
-                  Microsoft Teams, Google Workspace, Slack
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-yellow-600 rounded-full mr-2"></div>
-                  Excel, Google Forms
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-yellow-600 rounded-full mr-2"></div>
-                  Figma, Jira, Notion, Confluence
-                </li>
-              </ul>
-            </div>
-
-            {/* Languages */}
-            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="bg-red-100 p-3 rounded-lg inline-block mb-4">
-                <Languages className="text-red-600" size={24} />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Languages</h3>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-red-600 rounded-full mr-2"></div>
-                  Hindi (Fluent)
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-red-600 rounded-full mr-2"></div>
-                  English (Fluent)
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-red-600 rounded-full mr-2"></div>
-                  Sanskrit (Beginner)
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-red-600 rounded-full mr-2"></div>
-                  Russian (Beginner)
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -610,6 +1021,20 @@ const Home = () => {
                 Read More <ArrowRight size={16} className="ml-1" />
               </a>
             </div>
+
+            {/* Article 6: ChatGPT Missing Feature */}
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+              <div className="bg-indigo-100 p-3 rounded-lg inline-block mb-4">
+                <Zap className="text-indigo-600" size={24} />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">ChatGPT is Brilliant, But This One Missing Feature is Holding it Back</h3>
+              <p className="text-gray-600 mb-4">
+                Despite ChatGPT's impressive capabilities, there's one crucial feature that could transform how we interact with AI and win the competitive race.
+              </p>
+              <a href="https://medium.com/@bibhuranjan621/chatgpt-is-brilliant-but-this-one-missing-feature-is-holding-it-back-to-win-the-race-8203edbbc62a" target="_blank" className="text-blue-600 hover:underline flex items-center">
+                Read More <ArrowRight size={16} className="ml-1" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -624,7 +1049,7 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Achievement Cards */}
             <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
               <div className="flex items-center mb-4">
@@ -664,6 +1089,26 @@ const Home = () => {
                 <h3 className="text-xl font-bold">Community Leadership</h3>
               </div>
               <p className="text-gray-600">Organized monthly meetings with city council executives and raised funds for city welfare initiatives.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow lg:col-span-2">
+              <div className="flex items-center mb-4">
+                <div className="bg-indigo-100 p-3 rounded-lg mr-4">
+                  <Users className="text-indigo-600" size={24} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold">EADA Student Club, Spain</h3>
+                  <p className="text-gray-600 text-sm">Guest Speaker on Job Security and Future of Work in AI Era</p>
+                </div>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Invited as a speaker to discuss the impact of AI on job security and the evolving landscape of work. Shared insights on how professionals can adapt and thrive in an AI-driven future, drawing from my experience in product management and technology consulting.
+              </p>
+              <div className="flex items-center text-sm text-gray-500">
+                <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">International Speaking</span>
+                <span className="mx-2">•</span>
+                <span>2023</span>
+              </div>
             </div>
           </div>
         </div>
@@ -708,16 +1153,16 @@ const Home = () => {
               </a>
             </div>
 
-            {/* My Village Website */}
+            {/* Navpravaah Foundation */}
             <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
               <div className="flex items-center mb-4">
                 <div className="bg-green-100 p-3 rounded-lg mr-4">
-                  <Globe className="text-green-600" size={24} />
+                  <Users className="text-green-600" size={24} />
                 </div>
-                <h3 className="text-xl font-bold">My Village Website</h3>
+                <h3 className="text-xl font-bold">Navpravaah Foundation</h3>
               </div>
-              <p className="text-gray-600 mb-4">A website dedicated to showcasing the culture, history, and events of my village.</p>
-              <a href="#" className="text-blue-600 hover:underline flex items-center">
+              <p className="text-gray-600 mb-4">NGO to provide soft skills, used devices and technical knowledge to rural Indian students who can't afford it.</p>
+              <a href="https://navpravaahfoundation.vercel.app/" target="_blank" className="text-blue-600 hover:underline flex items-center">
                 Visit Project <ArrowRight size={16} className="ml-1" />
               </a>
             </div>
@@ -764,40 +1209,6 @@ const Home = () => {
           </div>
         </div>
       </section> */}
-
-      {/* Speaking Engagements Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Speaking Engagements</h2>
-            <p className="text-gray-600 text-lg">
-              Sharing insights and expertise on technology, AI, and the future of work.
-            </p>
-          </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="flex items-center mb-6">
-                <div className="bg-purple-100 p-3 rounded-lg mr-4">
-                  <Users className="text-purple-600" size={24} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-800">EADA Student Club, Spain</h3>
-                  <p className="text-gray-600">Guest Speaker on Job Security and Future of Work in AI Era</p>
-                </div>
-              </div>
-              <p className="text-gray-600 mb-4">
-                Invited as a speaker to discuss the impact of AI on job security and the evolving landscape of work. Shared insights on how professionals can adapt and thrive in an AI-driven future, drawing from my experience in product management and technology consulting.
-              </p>
-              <div className="flex items-center text-sm text-gray-500">
-                <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">International Speaking</span>
-                <span className="mx-2">•</span>
-                <span>2023</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-white">

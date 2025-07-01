@@ -76,10 +76,10 @@ const SubscriptionStrategy = () => {
           
           <div className="prose max-w-none">
             <p>
-              As the Product Manager leading the subscription strategy, I was tasked with revitalizing the platform's revenue growth and reducing customer churn. The challenge was to develop a comprehensive strategy that would increase revenue while maintaining customer satisfaction.
+              This case study demonstrates my strategic approach to developing a comprehensive subscription strategy for a hypothetical platform facing revenue stagnation and high customer churn. The challenge involves balancing user value with business sustainability while transitioning from a stagnant growth phase to a thriving subscription-based model.
             </p>
             <p>
-              This case study outlines my approach to analyzing customer behavior, restructuring pricing tiers, and implementing new features that led to significant improvements in both revenue and customer retention.
+              This analysis showcases my approach to customer behavior analysis, pricing strategy development, and feature prioritization to drive sustainable revenue growth and improve customer retention.
             </p>
           </div>
         </section>

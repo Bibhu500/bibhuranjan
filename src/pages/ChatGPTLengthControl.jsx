@@ -81,7 +81,7 @@ const ChatGPTLengthControl = () => {
           
           <div className="prose max-w-none">
             <p>
-              As a product manager analyzing ChatGPT's user experience, I identified a significant opportunity to improve both user satisfaction and operational efficiency through response length controls. Currently, users often receive verbose responses when they need concise answers, leading to wasted time and unnecessary compute consumption.
+              In this product analysis case study, I explore a significant opportunity to improve both user satisfaction and operational efficiency for ChatGPT through response length controls. This demonstrates my approach to identifying user pain points and developing feature solutions that balance user needs with business objectives. Currently, users often receive verbose responses when they need concise answers, leading to wasted time and unnecessary compute consumption.
             </p>
             <p>
               This case study outlines my analysis of the problem, proposed solution, and the expected impact on both user experience and business metrics.

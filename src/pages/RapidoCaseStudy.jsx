@@ -72,13 +72,13 @@ const RapidoCaseStudy = () => {
           
           <div className="prose max-w-none">
             <p>
-              As the Product Manager overseeing driver experience at Rapido, I was alerted to a concerning trend: driver ratings had dropped by 15% over the past two months. This decline was significantly impacting both driver satisfaction and retention, with potential downstream effects on passenger experience. 
+              This case study demonstrates my analytical approach to solving complex product management challenges using Rapido's hypothetical driver rating decline scenario. In this exercise, I analyze how I would approach diagnosing and addressing a 15% drop in driver ratings over two months - a critical issue that would significantly impact driver satisfaction, retention, and overall platform quality.
             </p>
             <p>
-              The challenge was particularly critical as Rapido's competitive advantage in the Indian bike taxi market relies heavily on its network of reliable, highly-rated drivers. Any sustained drop in quality metrics could threaten market share and growth targets in a highly competitive space.
+              The scenario is particularly challenging as it involves multiple stakeholders (drivers, passengers, operations) and potential root causes spanning technology, process, and human factors. This analysis showcases my systematic approach to problem-solving, data-driven decision making, and solution prioritization.
             </p>
             <p>
-              This case study outlines my approach to diagnosing the root causes of this sudden decline, the analytical process behind my solution development, and the implementation strategy that ultimately reversed the negative trend.
+              This case study outlines my methodical approach to root cause analysis, stakeholder research, data interpretation, and strategic solution development - core competencies essential for effective product management.
             </p>
           </div>
         </section>
@@ -90,7 +90,7 @@ const RapidoCaseStudy = () => {
           </h2>
           
           <div className="prose max-w-none">
-            <p>In August 2023, our data team flagged a concerning trend in our driver quality metrics:</p>
+            <p>In this hypothetical scenario, the data team flagged a concerning trend in driver quality metrics:</p>
             
             <ul>
               <li><strong>Driver ratings dropped from 4.7 to 4.0 (15% decrease) within 60 days</strong></li>
@@ -127,10 +127,10 @@ const RapidoCaseStudy = () => {
           </h2>
           
           <div className="prose max-w-none">
-            <p>To identify the root causes, I employed a structured approach combining data analysis, user research, and cross-functional collaboration:</p>
+            <p>To identify the root causes, I would employ a structured approach combining data analysis, user research, and cross-functional collaboration:</p>
             
             <h3>1. Data Mining & Analytics</h3>
-            <p>Working with our data science team, we analyzed:</p>
+            <p>Working with the data science team, my analysis would focus on:</p>
             <ul>
               <li><strong>Rating patterns by time of day, geography, driver tenure, and ride distance</strong></li>
               <li>Correlation between rating drops and specific app features/updates</li>
@@ -173,7 +173,7 @@ const RapidoCaseStudy = () => {
             </div>
             
             <h3>2. User Research</h3>
-            <p>To complement our quantitative findings, I led a mixed-methods research approach:</p>
+            <p>To complement quantitative findings, I would design a mixed-methods research approach:</p>
             <ul>
               <li><strong>Driver interviews (n=40):</strong> In-depth interviews with drivers across performance tiers</li>
               <li><strong>Rider surveys (n=2,500):</strong> Targeted feedback from riders who had given low ratings</li>
@@ -251,69 +251,69 @@ const RapidoCaseStudy = () => {
           </h2>
           
           <div className="prose max-w-none">
-            <p>Based on the root causes identified, I developed a comprehensive solution strategy with both immediate fixes and longer-term structural improvements:</p>
+            <p>Based on the root causes identified, I would develop a comprehensive solution strategy with both immediate fixes and longer-term structural improvements:</p>
             
             <h3>Phase 1: Quick Wins (Implemented in 2 Weeks)</h3>
             
             <div className="border border-blue-200 rounded-xl p-6 my-6 relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-blue-600 text-white text-xs py-1 px-3">
-                IMPLEMENTED
+                PROPOSED
               </div>
               <h4 className="font-bold text-gray-800 mb-2">Algorithm Adjustment</h4>
               <div className="flex items-start">
                 <Map className="text-blue-600 mr-4 shrink-0 mt-1" size={20} />
                 <div>
-                  <p className="text-gray-700">Rolled back the route optimization algorithm to the previous version while engineering teams worked on fixes.</p>
-                  <p className="text-gray-600 text-sm mt-2"><strong>Metrics:</strong> 25% immediate reduction in route-related complaints</p>
+                  <p className="text-gray-700">Roll back the route optimization algorithm to the previous version while engineering teams work on fixes.</p>
+                  <p className="text-gray-600 text-sm mt-2"><strong>Expected Metrics:</strong> 25% immediate reduction in route-related complaints</p>
                 </div>
               </div>
             </div>
             
             <div className="border border-blue-200 rounded-xl p-6 my-6 relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-blue-600 text-white text-xs py-1 px-3">
-                IMPLEMENTED
+                PROPOSED
               </div>
               <h4 className="font-bold text-gray-800 mb-2">Targeted Driver Communication</h4>
               <div className="flex items-start">
                 <MessageSquare className="text-blue-600 mr-4 shrink-0 mt-1" size={20} />
                 <div>
-                  <p className="text-gray-700">Created a direct outreach program for all drivers with ratings below 4.2, offering personalized coaching and troubleshooting.</p>
-                  <p className="text-gray-600 text-sm mt-2"><strong>Metrics:</strong> 30% of contacted drivers improved ratings within 2 weeks</p>
+                  <p className="text-gray-700">Create a direct outreach program for all drivers with ratings below 4.2, offering personalized coaching and troubleshooting.</p>
+                  <p className="text-gray-600 text-sm mt-2"><strong>Expected Metrics:</strong> 30% of contacted drivers improve ratings within 2 weeks</p>
                 </div>
               </div>
             </div>
             
-            <h3>Phase 2: Systematic Improvements (Implemented in 6-8 Weeks)</h3>
+            <h3>Phase 2: Systematic Improvements (6-8 Week Timeline)</h3>
             
             <div className="border border-blue-200 rounded-xl p-6 my-6 relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-blue-600 text-white text-xs py-1 px-3">
-                IMPLEMENTED
+                PROPOSED
               </div>
               <h4 className="font-bold text-gray-800 mb-2">Enhanced Onboarding Program</h4>
               <div className="flex items-start">
                 <Users className="text-blue-600 mr-4 shrink-0 mt-1" size={20} />
                 <div>
-                  <p className="text-gray-700">Redesigned driver onboarding with mandatory in-app tutorials, in-person sessions for city-specific knowledge, and a "shadow period" where new drivers are paired with experienced mentors.</p>
-                  <p className="text-gray-600 text-sm mt-2"><strong>Metrics:</strong> New driver ratings improved by 32% compared to pre-intervention cohorts</p>
+                  <p className="text-gray-700">Redesign driver onboarding with mandatory in-app tutorials, in-person sessions for city-specific knowledge, and a "shadow period" where new drivers are paired with experienced mentors.</p>
+                  <p className="text-gray-600 text-sm mt-2"><strong>Expected Metrics:</strong> New driver ratings improve by 32% compared to pre-intervention cohorts</p>
                 </div>
               </div>
             </div>
             
             <div className="border border-blue-200 rounded-xl p-6 my-6 relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-blue-600 text-white text-xs py-1 px-3">
-                IMPLEMENTED
+                PROPOSED
               </div>
               <h4 className="font-bold text-gray-800 mb-2">Incentive Restructuring</h4>
               <div className="flex items-start">
                 <DollarSign className="text-blue-600 mr-4 shrink-0 mt-1" size={20} />
                 <div>
-                  <p className="text-gray-700">Redesigned the incentive structure to balance quantity with quality metrics. Introduced tiered bonuses based on rating thresholds and rider feedback.</p>
-                  <p className="text-gray-600 text-sm mt-2"><strong>Metrics:</strong> 28% reduction in rush-related complaints, 15% improvement in overall service quality scores</p>
+                  <p className="text-gray-700">Redesign the incentive structure to balance quantity with quality metrics. Introduce tiered bonuses based on rating thresholds and rider feedback.</p>
+                  <p className="text-gray-600 text-sm mt-2"><strong>Expected Metrics:</strong> 28% reduction in rush-related complaints, 15% improvement in overall service quality scores</p>
                 </div>
               </div>
             </div>
             
-            <h3>Phase 3: Long-term Strategic Initiatives (8-12 Weeks)</h3>
+            <h3>Phase 3: Long-term Strategic Initiatives (8-12 Week Timeline)</h3>
             
             <div className="border border-blue-200 rounded-xl p-6 my-6 relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-green-600 text-white text-xs py-1 px-3">
@@ -337,7 +337,7 @@ const RapidoCaseStudy = () => {
               <div className="flex items-start">
                 <Map className="text-blue-600 mr-4 shrink-0 mt-1" size={20} />
                 <div>
-                  <p className="text-gray-700">Collaborated with engineering to redesign the routing algorithm incorporating driver feedback, historical traffic patterns, and real-time congestion data with driver override options.</p>
+                  <p className="text-gray-700">Collaborate with engineering to redesign the routing algorithm incorporating driver feedback, historical traffic patterns, and real-time congestion data with driver override options.</p>
                   <p className="text-gray-600 text-sm mt-2"><strong>Expected Impact:</strong> 35% reduction in route complaints, 20% improvement in estimated time accuracy</p>
                 </div>
               </div>
@@ -345,53 +345,53 @@ const RapidoCaseStudy = () => {
           </div>
         </section>
         
-        {/* Results & Impact */}
+        {/* Expected Results & Impact */}
         <section className="mb-16">
           <h2 className="text-2xl font-bold mb-6 text-gray-800 flex items-center">
-            <LineChart size={24} className="mr-2 text-green-600" /> Results & Impact
+            <LineChart size={24} className="mr-2 text-green-600" /> Expected Results & Impact
           </h2>
           
           <div className="bg-gray-50 p-8 rounded-xl mb-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div>
                 <p className="text-5xl font-bold text-blue-600">18%</p>
-                <p className="text-gray-600 mt-2">Increase in driver ratings (4.0 → 4.72) within 90 days</p>
+                <p className="text-gray-600 mt-2">Expected increase in driver ratings (4.0 → 4.72) within 90 days</p>
               </div>
               <div>
                 <p className="text-5xl font-bold text-green-600">24%</p>
-                <p className="text-gray-600 mt-2">Reduction in driver churn compared to pre-intervention period</p>
+                <p className="text-gray-600 mt-2">Projected reduction in driver churn compared to baseline</p>
               </div>
               <div>
                 <p className="text-5xl font-bold text-purple-600">40%</p>
-                <p className="text-gray-600 mt-2">Decrease in negative reviews mentioning route and wait time issues</p>
+                <p className="text-gray-600 mt-2">Anticipated decrease in negative reviews mentioning route and wait time issues</p>
               </div>
             </div>
           </div>
           
           <div className="prose max-w-none">
-            <p>The multi-phase intervention produced significant improvements across all key metrics:</p>
+            <p>The multi-phase intervention strategy would likely produce significant improvements across all key metrics:</p>
             
-            <h3>Quantitative Outcomes</h3>
+            <h3>Projected Quantitative Outcomes</h3>
             <ul>
-              <li><strong>Driver Quality:</strong> Average driver rating recovered to 4.72 (exceeding pre-decline levels)</li>
-              <li><strong>Business Impact:</strong> Rider retention improved by 12%, new user conversions increased by 8%</li>
-              <li><strong>Driver Satisfaction:</strong> Driver Net Promoter Score increased from 35 to 68</li>
-              <li><strong>Financial Impact:</strong> Estimated $850,000 saved in recruitment costs due to reduced churn</li>
+              <li><strong>Driver Quality:</strong> Average driver rating would recover to 4.72 (exceeding pre-decline levels)</li>
+              <li><strong>Business Impact:</strong> Projected 12% improvement in rider retention, 8% increase in new user conversions</li>
+              <li><strong>Driver Satisfaction:</strong> Estimated Driver Net Promoter Score increase from 35 to 68</li>
+              <li><strong>Financial Impact:</strong> Projected $850,000 saved in recruitment costs due to reduced churn</li>
             </ul>
             
-            <h3>Qualitative Improvements</h3>
+            <h3>Expected Qualitative Improvements</h3>
             <ul>
-              <li><strong>Driver Empowerment:</strong> Drivers reported feeling more supported and equipped to provide quality service</li>
-              <li><strong>Culture Shift:</strong> Focus moved from pure growth metrics to balanced quality and growth targets</li>
+              <li><strong>Driver Empowerment:</strong> Drivers would feel more supported and equipped to provide quality service</li>
+              <li><strong>Culture Shift:</strong> Focus would shift from pure growth metrics to balanced quality and growth targets</li>
               <li><strong>Cross-Functional Collaboration:</strong> Enhanced partnership between product, engineering, and operations teams</li>
             </ul>
             
             <div className="bg-blue-50 p-6 rounded-xl my-6">
-              <h4 className="font-bold text-blue-800 mb-4">Executive Feedback</h4>
-              <p className="text-blue-900 italic">
-                "The driver rating recovery project has become a case study for our organization on how to balance growth with quality. The data-driven, user-centered approach not only solved the immediate problem but built sustainable systems that will help prevent similar issues in the future."
+              <h4 className="font-bold text-blue-800 mb-4">Key Success Factors</h4>
+              <p className="text-blue-900">
+                This comprehensive approach would demonstrate the importance of balancing growth with quality metrics. The data-driven, user-centered methodology addresses immediate problems while building sustainable systems to prevent similar issues in the future.
               </p>
-              <p className="text-blue-700 font-medium mt-2">— Chief Operations Officer, Rapido</p>
+              <p className="text-blue-700 font-medium mt-2">The multi-stakeholder approach ensures all parties are aligned on quality standards and outcomes.</p>
             </div>
           </div>
         </section>
