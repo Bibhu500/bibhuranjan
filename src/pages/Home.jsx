@@ -632,9 +632,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Case Studies Section */}
-      <CaseStudiesSection />
-
       {/* Core Competencies Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
@@ -874,16 +871,16 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Languages - Compact Row */}
+            {/* Languages - Responsive Layout */}
             <div className="mt-6 bg-gray-50 rounded-xl p-6">
-              <div className="flex items-center justify-between">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <div className="bg-gray-200 p-2 rounded-lg">
                     <Languages className="text-gray-600" size={20} />
                   </div>
                   <h4 className="text-lg font-bold text-gray-800">Languages</h4>
                 </div>
-                <div className="flex gap-3">
+                <div className="flex flex-wrap gap-2 sm:gap-3">
                   <span className="bg-white text-gray-700 px-3 py-1 rounded-lg text-sm font-medium">Hindi (Fluent)</span>
                   <span className="bg-white text-gray-700 px-3 py-1 rounded-lg text-sm font-medium">English (Fluent)</span>
                   <span className="bg-white text-gray-600 px-3 py-1 rounded-lg text-sm">Sanskrit (Beginner)</span>
@@ -1050,7 +1047,28 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Achievement Cards */}
+            {/* EADA Speaker Achievement - Featured */}
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow lg:col-span-3">
+              <div className="flex items-center mb-4">
+                <div className="bg-indigo-100 p-3 rounded-lg mr-4">
+                  <Users className="text-indigo-600" size={24} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold">EADA Student Club, Spain</h3>
+                  <p className="text-gray-600 text-sm">Guest Speaker on Job Security and Future of Work in AI Era</p>
+                </div>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Invited as a speaker to discuss the impact of AI on job security and the evolving landscape of work. Shared insights on how professionals can adapt and thrive in an AI-driven future, drawing from my experience in product management and technology consulting.
+              </p>
+              <div className="flex items-center text-sm text-gray-500">
+                <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">International Speaking</span>
+                <span className="mx-2">•</span>
+                <span>2023</span>
+              </div>
+            </div>
+
+            {/* Other Achievement Cards */}
             <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
               <div className="flex items-center mb-4">
                 <div className="bg-yellow-100 p-3 rounded-lg mr-4">
@@ -1090,26 +1108,6 @@ const Home = () => {
               </div>
               <p className="text-gray-600">Organized monthly meetings with city council executives and raised funds for city welfare initiatives.</p>
             </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow lg:col-span-2">
-              <div className="flex items-center mb-4">
-                <div className="bg-indigo-100 p-3 rounded-lg mr-4">
-                  <Users className="text-indigo-600" size={24} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">EADA Student Club, Spain</h3>
-                  <p className="text-gray-600 text-sm">Guest Speaker on Job Security and Future of Work in AI Era</p>
-                </div>
-              </div>
-              <p className="text-gray-600 mb-4">
-                Invited as a speaker to discuss the impact of AI on job security and the evolving landscape of work. Shared insights on how professionals can adapt and thrive in an AI-driven future, drawing from my experience in product management and technology consulting.
-              </p>
-              <div className="flex items-center text-sm text-gray-500">
-                <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">International Speaking</span>
-                <span className="mx-2">•</span>
-                <span>2023</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -1125,16 +1123,16 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/*AI based PM RCA */}
+            {/*Product Decoded Platform */}
             <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
               <div className="flex items-center mb-4">
                 <div className="bg-blue-100 p-3 rounded-lg mr-4">
                   <Briefcase className="text-blue-600" size={24} />
                 </div>
-                <h3 className="text-xl font-bold">rcamatters</h3>
+                <h3 className="text-xl font-bold">productdecoded</h3>
               </div>
-              <p className="text-gray-600 mb-4">An innovative AI platform to practice and learn Root Cause Analysis of a product problem</p>
-              <a href="https://rcamatters.vercel.app" className="text-blue-600 hover:underline flex items-center">
+              <p className="text-gray-600 mb-4">A platform to help product aspirants practice and learn case studies and get connected through the community</p>
+              <a href="https://productdecoded.vercel.app" className="text-blue-600 hover:underline flex items-center">
                 Visit Project <ArrowRight size={16} className="ml-1" />
               </a>
             </div>
