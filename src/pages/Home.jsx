@@ -162,7 +162,7 @@ const Home = () => {
                   <ArrowRight size={16} />
                 </a>
                 <a
-  href="https://firebasestorage.googleapis.com/v0/b/ieltsappeal-f000c.appspot.com/o/my%20resume%2FBibhu-Ranjan%20PM%20resume.pdf?alt=media&token=df3cfb0e-df72-448c-a7f2-c278b73720f8"
+  href="https://firebasestorage.googleapis.com/v0/b/ieltsappeal-f000c.appspot.com/o/my%20resume%2FBibhu%20Ranjan%20RF.pdf?alt=media&token=fb51d0f1-7a00-482d-b36b-6d59756219b9"
   download
   target="_blank"
   rel="noopener noreferrer"
@@ -280,6 +280,9 @@ const Home = () => {
         </div>
       </section>
 
+            {/* Case Studies Section */}
+            <CaseStudiesSection />
+
       {/* Impact Metrics Dashboard */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
         <div className="container mx-auto px-6">
@@ -307,9 +310,9 @@ const Home = () => {
                 <div className="bg-purple-100 rounded-2xl p-4 inline-block mb-4 group-hover:scale-110 transition-transform">
                   <Users className="text-purple-600" size={32} />
                 </div>
-                <div className="text-4xl font-bold text-purple-600 mb-2">2K+</div>
-                <div className="text-gray-800 font-semibold mb-1">User Growth</div>
-                <div className="text-sm text-gray-600">From 250 to 2,000+ users in one month</div>
+                <div className="text-4xl font-bold text-purple-600 mb-2">5M+</div>
+                <div className="text-gray-800 font-semibold mb-1">User Reach</div>
+                <div className="text-sm text-gray-600">on threads and platforms via contents</div>
               </div>
 
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center group">
@@ -935,8 +938,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Case Studies Section */}
-      <CaseStudiesSection />
+
 
       {/* Blogs or Articles */}
       <section id="blogs" className="py-20 bg-white">
