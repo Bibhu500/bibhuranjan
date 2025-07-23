@@ -139,7 +139,7 @@ const Home = () => {
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-purple-600">2+</div>
-                  <div className="text-sm text-gray-600 font-medium">Years Experience</div>
+                  <div className="text-sm text-gray-600 font-medium">Years PM Experience</div>
                 </div>
                 <div className="text-center">
                                   <div className="text-3xl font-bold text-green-600">5K+</div>
