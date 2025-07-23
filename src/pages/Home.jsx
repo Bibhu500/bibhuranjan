@@ -128,7 +128,7 @@ const Home = () => {
                   I transform complex business challenges into simple, impactful solutions through 
                   <span className="font-semibold text-gray-800"> outcome-driven product strategy</span> and 
                   <span className="font-semibold text-gray-800"> intelligent automation</span>. 
-                  Specialized in developing AI-based features, integrating monetization strategies, and optimizing UX, resulting in a 300% increase in user retention and scaling the platform from 250 to over 2,000 users.                </p>
+                  Specialized in developing AI-based features, integrating monetization strategies, and optimizing UX, resulting in a 300% increase in user retention and scaling the platform from 0 to over 5,000 users.                </p>
               </div>
 
               {/* Key Metrics Row */}
@@ -142,8 +142,8 @@ const Home = () => {
                   <div className="text-sm text-gray-600 font-medium">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-600">2K+</div>
-                  <div className="text-sm text-gray-600 font-medium">Users Grown</div>
+                                  <div className="text-3xl font-bold text-green-600">5K+</div>
+                <div className="text-sm text-gray-600 font-medium">Users Grown</div>
                 </div>
               </div>
 
@@ -242,7 +242,7 @@ const Home = () => {
                   <div className="text-xs text-gray-600">Years Exp</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-600">2K+</div>
+                  <div className="text-2xl font-bold text-green-600">5K+</div>
                   <div className="text-xs text-gray-600">Users</div>
                 </div>
               </div>
@@ -310,7 +310,7 @@ const Home = () => {
                 <div className="bg-purple-100 rounded-2xl p-4 inline-block mb-4 group-hover:scale-110 transition-transform">
                   <Users className="text-purple-600" size={32} />
                 </div>
-                <div className="text-4xl font-bold text-purple-600 mb-2">5M+</div>
+                <div className="text-4xl font-bold text-purple-600 mb-2">10M+</div>
                 <div className="text-gray-800 font-semibold mb-1">User Reach</div>
                 <div className="text-sm text-gray-600">on threads and platforms via contents</div>
               </div>
@@ -364,7 +364,7 @@ const Home = () => {
                   <h3 className="text-xl font-bold text-gray-800">IELTSAPPEAL Growth</h3>
                 </div>
                                  <div className="space-y-3 text-gray-600">
-                   <p>• Scaled student base from 250 to 2,000+ users through AI personalization</p>
+                   <p>• Scaled student base from 0 to 5,000+ users through AI personalization</p>
                    <p>• Launched ChatGPT-powered evaluation driving 300% engagement</p>
                    <p>• Deployed conversational AI reducing support queries by 70%</p>
                    <p>• Built intelligent scoring system generating first revenue streams</p>
@@ -447,7 +447,7 @@ const Home = () => {
                   <div className="bg-white rounded-xl p-6 shadow-md">
                     <div className="text-center">
                       <div className="text-2xl font-bold text-blue-600 mb-1">Current Role</div>
-                      <div className="text-gray-800 font-semibold">Product Manager</div>
+                      <div className="text-gray-800 font-semibold">Founder and Product Manager</div>
                       <div className="text-sm text-gray-600 font-medium">IELTSAPPEAL</div>
                       <div className="text-sm text-gray-600">Nov 2023 - Present</div>
                       <div className="text-xs text-gray-500 flex items-center justify-center gap-1 mt-2">
@@ -486,23 +486,25 @@ const Home = () => {
                          {/* Experience Grid */}
              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               
-              {/* IELTSAPPEAL - Product Manager */}
+              {/* IELTSAPPEAL - Founder and Product Manager */}
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-blue-600">
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="bg-blue-100 p-3 rounded-xl">
+                    <a href="https://ieltsappeal.in" target="_blank" rel="noopener noreferrer" className="bg-blue-100 p-3 rounded-xl hover:bg-blue-200 transition-colors cursor-pointer">
                       <Briefcase className="text-blue-600" size={24} />
-                    </div>
+                    </a>
                     <div>
-                      <h3 className="text-xl font-bold text-gray-800">Product Manager</h3>
-                      <p className="text-blue-600 font-semibold">IELTSAPPEAL</p>
+                      <a href="https://ieltsappeal.in" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700 transition-colors">
+                        <h3 className="text-xl font-bold text-gray-800">Founder and Product Manager</h3>
+                        <p className="text-blue-600 font-semibold">IELTSAPPEAL</p>
+                      </a>
                     </div>
                   </div>
                   <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Current</span>
                 </div>
                 <p className="text-gray-600 font-medium mb-4">Nov 2023 - Present</p>
                                  <div className="space-y-2 text-gray-700">
-                   <p>• Scaled student base from 250 to 2,000+ users through AI-powered personalization</p>
+                   <p>• Scaled student base from 0 to 5,000+ users through AI-powered personalization</p>
                    <p>• Developed ChatGPT API-based evaluation system driving 300% retention increase</p>
                    <p>• Built conversational AI chatbot reducing manual workload by 80%</p>
                    <p>• Implemented intelligent test scoring features generating 7% conversion rate</p>
@@ -513,12 +515,14 @@ const Home = () => {
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-600">
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="bg-purple-100 p-3 rounded-xl">
+                    <a href="https://untraddcareer.com" target="_blank" rel="noopener noreferrer" className="bg-purple-100 p-3 rounded-xl hover:bg-purple-200 transition-colors cursor-pointer">
                       <Users className="text-purple-600" size={24} />
-                    </div>
+                    </a>
                     <div>
-                      <h3 className="text-xl font-bold text-gray-800">Product & Program Manager</h3>
-                      <p className="text-purple-600 font-semibold">UNTRADDCAREER</p>
+                      <a href="https://untraddcareer.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-700 transition-colors">
+                        <h3 className="text-xl font-bold text-gray-800">Product & Program Manager</h3>
+                        <p className="text-purple-600 font-semibold">UNTRADDCAREER</p>
+                      </a>
                     </div>
                   </div>
                   <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">Part-time</span>
