@@ -162,7 +162,7 @@ const Home = () => {
                   <ArrowRight size={16} />
                 </a>
                 <a
-  href="https://firebasestorage.googleapis.com/v0/b/ieltsappeal-f000c.appspot.com/o/my%20resume%2FBibhu%20Ranjan%20RF.pdf?alt=media&token=fb51d0f1-7a00-482d-b36b-6d59756219b9"
+  href="https://firebasestorage.googleapis.com/v0/b/ieltsappeal-f000c.appspot.com/o/my%20resume%2FBibhu%20Ranjan%20G.pdf?alt=media&token=36bc9fc6-e314-4c7e-b45d-c10385cb7acf"
   download
   target="_blank"
   rel="noopener noreferrer"
@@ -527,7 +527,7 @@ const Home = () => {
                   </div>
                   <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">Part-time</span>
                 </div>
-                <p className="text-gray-600 font-medium mb-4">May 2024 - Present</p>
+                <p className="text-gray-600 font-medium mb-4">May 2024 - Jun 2025</p>
                 <div className="space-y-2 text-gray-700">
                   <p>• Built end-to-end operations impacting 500+ learners</p>
                   <p>• Enabled 5+ startups to build initial teams through platform</p>
