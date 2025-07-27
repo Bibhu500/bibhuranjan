@@ -13,7 +13,8 @@ const CaseStudyCard = ({ title, type, icon, slug, description, isDetailed = fals
     'ecommerce-conversion-rate': { impact: '+22%', color: 'text-emerald-600', bg: 'bg-emerald-50' },
     'chatgpt-length-control': { impact: '40%', color: 'text-indigo-600', bg: 'bg-indigo-50' },
     'subscription-strategy': { impact: '+35%', color: 'text-orange-600', bg: 'bg-orange-50' },
-    'laptops-delhi-daily': { impact: '2.5K', color: 'text-pink-600', bg: 'bg-pink-50' }
+    'laptops-delhi-daily': { impact: '2.5K', color: 'text-pink-600', bg: 'bg-pink-50' },
+    'windows-11-teardown': { impact: 'Deep', color: 'text-indigo-600', bg: 'bg-indigo-50' }
   };
 
   const cardImpact = impactData[slug] || { impact: '+X%', color: 'text-gray-600', bg: 'bg-gray-50' };
@@ -27,6 +28,7 @@ const CaseStudyCard = ({ title, type, icon, slug, description, isDetailed = fals
       case 'Product Enhancement': return { bg: 'bg-blue-600', textColor: 'text-white' };
       case 'Guesstimate': return { bg: 'bg-pink-600', textColor: 'text-white' };
       case 'Framework': return { bg: 'bg-blue-600', textColor: 'text-white' };
+      case 'Teardown': return { bg: 'bg-indigo-600', textColor: 'text-white' };
       default: return { bg: 'bg-gray-600', textColor: 'text-white' };
     }
   };

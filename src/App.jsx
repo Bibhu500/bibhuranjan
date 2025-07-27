@@ -12,6 +12,7 @@ import EcommerceConversionRate from './pages/EcommerceConversionRate';
 import SubscriptionStrategy from './pages/SubscriptionStrategy';
 import ChatGPTLengthControl from './pages/ChatGPTLengthControl';
 import LaptopGuesstimateCaseStudy from './pages/LaptopGuesstimateCaseStudy';
+import Windows11Teardown from './pages/Windows11Teardown';
 import './App.css'
 
 // ScrollToTop component
@@ -44,6 +45,7 @@ function App() {
         <Route path="/case-studies/ecommerce-conversion-rate" element={<EcommerceConversionRate />} />
         <Route path="/case-studies/subscription-strategy" element={<SubscriptionStrategy />} />
         <Route path="/case-studies/laptops-delhi-daily" element={<LaptopGuesstimateCaseStudy />} />
+        <Route path="/case-studies/windows-11-teardown" element={<Windows11Teardown />} />
         <Route path="/case-studies/app-crash-analysis" element={<RapidoCaseStudy />} />
         <Route path="/case-studies/healthcare-app-design" element={<RapidoCaseStudy />} />
         <Route path="/case-studies/product-page-redesign" element={<RapidoCaseStudy />} />

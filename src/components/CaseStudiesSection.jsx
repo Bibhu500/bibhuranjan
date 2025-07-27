@@ -1,10 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
 import CaseStudyCard from './CaseStudyCard';
-import { ChevronLeft, ChevronRight, LineChart, BarChart3, Search, RefreshCw, Lightbulb, FileText, Settings, Laptop, Brush, Car, Target, TrendingUp, Users, Award, Zap } from 'lucide-react';
+import { ChevronLeft, ChevronRight, LineChart, BarChart3, Search, RefreshCw, Lightbulb, FileText, Settings, Laptop, Brush, Car, Target, TrendingUp, Users, Award, Zap, Monitor } from 'lucide-react';
 
 const CaseStudiesSection = () => {
   const scrollContainerRef = useRef(null);
-  const [activeTab, setActiveTab] = useState('Product Improvement');
+  const [activeTab, setActiveTab] = useState('Product Teardowns');
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -141,6 +141,30 @@ const CaseStudiesSection = () => {
         description: "Developing and executing a successful product launch strategy for a new mobile application."
       }
     ],
+    "Product Teardowns": [
+      {
+        title: "Windows 11 Product Teardown",
+        type: "Teardown",
+        icon: <Monitor className="text-indigo-600" size={24} />,
+        slug: "windows-11-teardown",
+        description: "Comprehensive analysis of Windows 11's product strategy, user experience, and market positioning through detailed feature breakdown.",
+        isDetailed: true
+      },
+      {
+        title: "Spotify Mobile App Teardown",
+        type: "Teardown",
+        icon: <Monitor className="text-indigo-600" size={24} />,
+        slug: "spotify-teardown",
+        description: "Deep dive into Spotify's mobile app design, user journey, and monetization strategies."
+      },
+      {
+        title: "Netflix Product Strategy Analysis",
+        type: "Teardown",
+        icon: <Monitor className="text-indigo-600" size={24} />,
+        slug: "netflix-teardown",
+        description: "Analyzing Netflix's product evolution, content recommendation algorithms, and subscription model optimization."
+      }
+    ],
     "Guesstimates": [
       {
         title: "Laptops Sold Daily in Delhi",
@@ -172,6 +196,7 @@ const CaseStudiesSection = () => {
     Design: <RefreshCw className="mr-2" size={18} />,
     Metrics: <LineChart className="mr-2" size={18} />,
     "Product Improvement": <Settings className="mr-2" size={18} />,
+    "Product Teardowns": <Monitor className="mr-2" size={18} />,
     "Guesstimates": <BarChart3 className="mr-2" size={18} />
   };
 
@@ -180,6 +205,7 @@ const CaseStudiesSection = () => {
     Design: { count: 3, bg: 'bg-purple-600', impact: 'User Experience' },
     Metrics: { count: 3, bg: 'bg-green-600', impact: 'Data-Driven' },
     "Product Improvement": { count: 4, bg: 'bg-blue-600', impact: 'Innovation' },
+    "Product Teardowns": { count: 3, bg: 'bg-indigo-600', impact: 'Market Analysis' },
     "Guesstimates": { count: 3, bg: 'bg-pink-600', impact: 'Strategic Thinking' }
   };
 

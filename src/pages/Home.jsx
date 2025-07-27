@@ -334,10 +334,32 @@ const Home = () => {
 
             {/* Secondary Metrics Row */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-              <div className="bg-white rounded-xl p-6 shadow-md text-center">
-                <div className="text-2xl font-bold text-indigo-600 mb-1">60K</div>
-                <div className="text-sm text-gray-600">Threads followers (3K→60K in 3 months)</div>
-              </div>
+              <a 
+                href="https://www.threads.com/@ielts_appeal?hl=en" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white rounded-xl p-6 shadow-md text-center hover:shadow-lg transition-all duration-300 cursor-pointer group"
+              >
+                <div className="mb-2 flex justify-center">
+                  <img 
+                    src="/ieltsappeals.jpeg" 
+                    alt="IELTS Appeal Threads Profile" 
+                    className="w-8 h-8 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="mb-2">
+                  <iframe 
+                    height="50px" 
+                    width="180px" 
+                    frameBorder="0" 
+                    src="https://livecounts.nl/threads-realtime/embed/?c=ielts_appeal" 
+                    style={{ border: 0, width: '100%', height: '50px', backgroundColor: '#FFF' }}
+                    title="Live Threads Follower Count"
+                  />
+                </div>
+                <div className="text-xs text-gray-600 group-hover:text-blue-600 transition-colors">Live Followers</div>
+                <div className="text-xs text-gray-500">Click to visit</div>
+              </a>
               <div className="bg-white rounded-xl p-6 shadow-md text-center">
                 <div className="text-2xl font-bold text-pink-600 mb-1">7%</div>
                 <div className="text-sm text-gray-600">Free-to-paid conversion rate</div>
