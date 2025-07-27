@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, LineChart, BarChart3, Search, RefreshCw, Lig
 
 const CaseStudiesSection = () => {
   const scrollContainerRef = useRef(null);
-  const [activeTab, setActiveTab] = useState('Product Teardowns');
+  const [activeTab, setActiveTab] = useState('Product Improvement');
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
