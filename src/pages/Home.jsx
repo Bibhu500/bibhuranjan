@@ -162,7 +162,7 @@ const Home = () => {
                   <ArrowRight size={16} />
                 </a>
                 <a
-  href="https://firebasestorage.googleapis.com/v0/b/ieltsappeal-f000c.appspot.com/o/my%20resume%2FBibhu%20Ranjan%20G.pdf?alt=media&token=36bc9fc6-e314-4c7e-b45d-c10385cb7acf"
+  href="https://drive.google.com/file/d/1u-Z1uncU96RYkF6aKi-2Chl-Fct9rNoM/view?usp=drive_link"
   target="_blank"
   rel="noopener noreferrer"
   className="inline-flex items-center gap-2 border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl hover:bg-gray-50 transition-all duration-300 font-semibold"
