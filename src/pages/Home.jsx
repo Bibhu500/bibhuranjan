@@ -125,10 +125,10 @@ const Home = () => {
                 </div>
                 
                 <p className="text-xl text-gray-600 max-w-3xl leading-relaxed">
-                  I transform complex business challenges into simple, impactful solutions through 
+                  I transform complex product challenges into simple, impactful solutions through 
                   <span className="font-semibold text-gray-800"> outcome-driven product strategy</span> and 
                   <span className="font-semibold text-gray-800"> intelligent automation</span>. 
-                  Specialized in developing AI-based features, integrating monetization strategies, and optimizing UX, resulting in a 300% increase in user retention and scaling the platform from 0 to over 5,000 users.                </p>
+                  Specialized in developing AI-based features, GTM strategies, User Behavior Analysis, Growth Strategies and optimizing UI/UX. </p>
               </div>
 
               {/* Key Metrics Row */}
@@ -142,7 +142,7 @@ const Home = () => {
                   <div className="text-sm text-gray-600 font-medium">Years PM Experience</div>
                 </div>
                 <div className="text-center">
-                                  <div className="text-3xl font-bold text-green-600">5K+</div>
+                                  <div className="text-3xl font-bold text-green-600">50K+</div>
                 <div className="text-sm text-gray-600 font-medium">Users Grown</div>
                 </div>
               </div>
@@ -369,7 +369,7 @@ const Home = () => {
                 <div className="text-sm text-gray-600">Course completion rate increase</div>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md text-center">
-                <div className="text-2xl font-bold text-emerald-600 mb-1">7K+</div>
+                <div className="text-2xl font-bold text-emerald-600 mb-1">50K+</div>
                 <div className="text-sm text-gray-600">End users served across platforms</div>
               </div>
             </div>
@@ -384,7 +384,7 @@ const Home = () => {
                   <h3 className="text-xl font-bold text-gray-800">IELTSAPPEAL Growth</h3>
                 </div>
                                  <div className="space-y-3 text-gray-600">
-                   <p>• Scaled student base from 0 to 5,000+ users through AI personalization</p>
+                   <p>• Scaled student base from 0 to 50,000+ users through personalization and user behavior categorization</p>
                    <p>• Launched ChatGPT-powered evaluation driving 300% engagement</p>
                    <p>• Deployed conversational AI reducing support queries by 70%</p>
                    <p>• Built intelligent scoring system generating first revenue streams</p>
@@ -396,7 +396,7 @@ const Home = () => {
                   <div className="bg-purple-100 p-3 rounded-lg mr-4">
                     <Users className="text-purple-600" size={24} />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800">Cross-Platform Impact</h3>
+                  <h3 className="text-xl font-bold text-gray-800">Other Impacts</h3>
                 </div>
                 <div className="space-y-3 text-gray-600">
                   <p>• Impacted 500+ learners at UntraddCareer</p>
