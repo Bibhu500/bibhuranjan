@@ -226,7 +226,7 @@ const Home = () => {
               </div>
               
               <p className="text-base text-gray-600 leading-relaxed">
-                I transform complex business challenges into simple, impactful solutions through outcome-driven product strategy and intelligent automation.
+                I transform complex business challenges into simple, impactful solutions through outcome-driven product strategy and intelligent automation. Specialized in developing AI-based features, GTM strategies, User Behavior Analysis, Growth Strategies and optimizing UI/UX.
               </p>
 
               {/* Mobile Metrics */}
@@ -240,7 +240,7 @@ const Home = () => {
                   <div className="text-xs text-gray-600">Years Exp</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-600">5K+</div>
+                  <div className="text-2xl font-bold text-green-600">50K+</div>
                   <div className="text-xs text-gray-600">Users</div>
                 </div>
               </div>
@@ -524,7 +524,7 @@ const Home = () => {
                 </div>
                 <p className="text-gray-600 font-medium mb-4">Nov 2023 - Present</p>
                                  <div className="space-y-2 text-gray-700">
-                   <p>• Scaled student base from 0 to 5,000+ users through AI-powered personalization</p>
+                   <p>• Scaled student base from 0 to 50,000+ users through AI-powered personalization</p>
                    <p>• Developed ChatGPT API-based evaluation system driving 300% retention increase</p>
                    <p>• Built conversational AI chatbot reducing manual workload by 80%</p>
                    <p>• Implemented intelligent test scoring features generating 7% conversion rate</p>
