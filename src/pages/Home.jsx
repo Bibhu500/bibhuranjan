@@ -162,7 +162,7 @@ const Home = () => {
                   <ArrowRight size={16} />
                 </a>
                 <a
-  href="https://drive.google.com/file/d/1u-Z1uncU96RYkF6aKi-2Chl-Fct9rNoM/view?usp=drive_link"
+  href="https://drive.google.com/file/d/1GLsseRQaje7bxRYl-NqDHry6ZFgS2FAr/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
   className="inline-flex items-center gap-2 border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl hover:bg-gray-50 transition-all duration-300 font-semibold"
@@ -259,7 +259,7 @@ const Home = () => {
                     <Linkedin size={16} />
                     LinkedIn
                   </a>
-                  <a href="https://drive.google.com/file/d/1u-Z1uncU96RYkF6aKi-2Chl-Fct9rNoM/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border-2 border-gray-300 text-gray-700 px-4 py-3 rounded-xl hover:bg-gray-50 transition-all font-semibold text-sm">
+                  <a href="https://drive.google.com/file/d/1GLsseRQaje7bxRYl-NqDHry6ZFgS2FAr/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border-2 border-gray-300 text-gray-700 px-4 py-3 rounded-xl hover:bg-gray-50 transition-all font-semibold text-sm">
                     <Download size={16} />
                     Resume
                   </a>
