@@ -134,16 +134,16 @@ const Home = () => {
               {/* Key Metrics Row */}
               <div className="grid grid-cols-3 gap-6 py-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600">300%</div>
-                  <div className="text-sm text-gray-600 font-medium">Retention Increase</div>
+                  <div className="text-3xl font-bold text-blue-600">30K+</div>
+                  <div className="text-sm text-gray-600 font-medium">Active Users</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-purple-600">2+</div>
                   <div className="text-sm text-gray-600 font-medium">Years PM Experience</div>
                 </div>
                 <div className="text-center">
-                                  <div className="text-3xl font-bold text-green-600">50K+</div>
-                <div className="text-sm text-gray-600 font-medium">Users Grown</div>
+                  <div className="text-3xl font-bold text-green-600">60%</div>
+                  <div className="text-sm text-gray-600 font-medium">Monthly Retention</div>
                 </div>
               </div>
 
@@ -226,7 +226,7 @@ const Home = () => {
               </div>
               
               <p className="text-base text-gray-600 leading-relaxed">
-                I transform complex business challenges into simple, impactful solutions through outcome-driven product strategy and intelligent automation. Specialized in developing AI-based features, GTM strategies, User Behavior Analysis, Growth Strategies and optimizing UI/UX.
+                Product Manager with 2+ years driving products from concept to launch. Experienced in end-to-end product lifecycle, data-driven decisions, and AI-based product implementation. Proven track record in user growth, conversion optimization, and building scalable products.
               </p>
 
               {/* Mobile Metrics */}
